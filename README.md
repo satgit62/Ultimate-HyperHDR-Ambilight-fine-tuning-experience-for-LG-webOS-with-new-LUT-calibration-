@@ -51,7 +51,7 @@ Even the first LUT calibration for SDR, using the reference test video for SDR, 
 
 * a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill “$pid”; done` to terminate piccap with Hyperion process.
 * b. Unzip the webos_backends.zip.
-* c. Then you have to replace all new backend files in `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` the old backend files.
+* c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
 * d. Then you must execute `luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings “{\”use_direct_nv12\“: true}” `in Terminal/SSH to activate NV12 mode.
 
 Note: If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame.

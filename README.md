@@ -25,9 +25,9 @@ The following lines of code were added under other changes, by @s1mptom to the d
 
 Source code:
 
-  `#define LUT_TABLE_FILENAME_HDR “lut_lin_tables_hdr.3d”
-  #define LUT_TABLE_FILENAME_DV “lut_lin_tables_dv.3d”
-  #define LUT_TABLE_FILENAME_SDR “lut_lin_tables.3d”`
+ * #define LUT_TABLE_FILENAME_HDR “lut_lin_tables_hdr.3d”
+ * #define LUT_TABLE_FILENAME_DV “lut_lin_tables_dv.3d”
+ * #define LUT_TABLE_FILENAME_SDR “lut_lin_tables.3d”
 
 In our case, this means that we replace the new LUTs (lut_lin_tables.3d, lut_lin_tables_dv.3d and lut_lin_tables_hdr.3d) with the standard LUT.
 
@@ -49,29 +49,29 @@ Even the first LUT calibration for SDR, using the reference test video for SDR, 
 
 # 1.replace backends in hyperion-webos (PicCap):
 
-a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill “$pid”; done` to terminate piccap with Hyperion process.
-b. Unzip the webos_backends.zip.
-c. Then you have to replace all new backend files in `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` the old backend files.
-d. Then you must execute `luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings “{\”use_direct_nv12\“: true}” `in Terminal/SSH to activate NV12 mode.
+* a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill “$pid”; done` to terminate piccap with Hyperion process.
+* b. Unzip the webos_backends.zip.
+* c. Then you have to replace all new backend files in `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` the old backend files.
+* d. Then you must execute `luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings “{\”use_direct_nv12\“: true}” `in Terminal/SSH to activate NV12 mode.
 
 Note: If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame.
 
 # 2. HyperHDR installation instructions:
 
-a. Start HyperHDR app and stop the services/daemon.
-b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
-c. Install HyperHDR version 21.0.0.0alpha0 Build ai_calibration branch from attachment (org.webosbrew.hyperhdr.loader_0.1.9_all.ipk).
-d. Start HyperHDR app and start the services/daemon.
-e. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
-f. Using FileZilla or webOS Dev Manager, save the 50 MB “flat_lut_lin_tables.3d” from `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and then delete it from the above-mentioned directory.
-g. Using FileZilla or webOS Dev Manager, also delete the “lut_lin_tables.3d” from `/home/root/.hyperhdr/` directory of your TV.
-h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
-i. In HyperHDR under Network Settings, Flatbuffer Server, activate the HDR to SDR sound mapping Quarter of frame for NV12.
+* a. Start HyperHDR app and stop the services/daemon.
+* b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
+* c. Install HyperHDR version 21.0.0.0alpha0 Build ai_calibration branch from attachment (org.webosbrew.hyperhdr.loader_0.1.9_all.ipk).
+* d. Start HyperHDR app and start the services/daemon.
+* e. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
+* f. Using FileZilla or webOS Dev Manager, save the 50 MB “flat_lut_lin_tables.3d” from `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and then delete it from the above-mentioned directory.
+* g. Using FileZilla or webOS Dev Manager, also delete the “lut_lin_tables.3d” from `/home/root/.hyperhdr/` directory of your TV.
+* h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
+* i. In HyperHDR under Network Settings, Flatbuffer Server, activate the HDR to SDR sound mapping Quarter of frame for NV12.
 
 When switching from an SDR video to an HDR or DV video, the HDR (global) mode is automatically switched on and the LUT requested by the backend is searched for, loaded in HyperHDR and displayed in the log:
 
 [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_dv.3d'
-[FLATBUFSERVER] (LutLoader.cpp:82) LUT file found: `/home/root/.hyperhdr/lut_lin_tables_dv.3d`
+[FLATBUFSERVER] (LutLoader.cpp:82) LUT file found: /home/root/.hyperhdr/lut_lin_tables_dv.3d
 
 When returning to an SDR video, the HDR (global) mode is automatically switched off and the SDR LUT is requested.
 
@@ -93,14 +93,18 @@ Using different players and test files (calibration videos) may slightly affect 
 
 # Source:
 Download hyperion-webos von @s1mptom:https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235
+
 Download org.webosbrew.hyperhdr.loader_0.1.9_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.1.9_all.ipk
+
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link:https://drive.google.com/file/d/1eUXQ8pkaipQVP3nn4IWlnMKyj70w9YvE/view?usp=sharing
+
+Download Video calibration test files:https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
+
 https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-formats
+
 https://github.com/awawa-dev/HyperHDR/pull/920
+
 https://github.com/awawa-dev/HyperHDR/pull/896
-https://github.com/satgit62/hyperhdr-webos-loader https://github.com/s1mptom/hyperion-webos/tree/main Video calibration test files:https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
 
+https://github.com/s1mptom/hyperion-webos/tree/main 
 
-
-
-  

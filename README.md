@@ -110,23 +110,23 @@ https://github.com/satgit62/hyperhdr-webos-loader
 
 https://github.com/s1mptom/hyperion-webos/tree/main 
 
-HyperHDR version
+HyperHDR version:
 
 ![About HyperHDR](https://github.com/user-attachments/assets/11e3e22c-7df4-437d-a016-231a776e76e7)
 
-LUT_calibration
+LUT_calibration:
 
 ![LUT_calibration](https://github.com/user-attachments/assets/4fa881f3-ae17-4281-bc03-19e2c14f9772)
 
-LUT_calibration
+LUT_calibration:
 
 ![LUT_calibration1](https://github.com/user-attachments/assets/97cddfb5-4627-4b61-a29a-fabfa96e6b06)
 
-NV12 Mode Log
+NV12 Mode Log:
 
 ![NV12 Mode Log](https://github.com/user-attachments/assets/76b22449-62e2-4f46-8f95-3733e1540e67)
 
-Quarter of frame for NV12
+Quarter of frame for NV12:
 
 ![Quarter of frame for NV12](https://github.com/user-attachments/assets/ae2b4746-7d93-40ac-b8b9-cdaa16475116)
 
@@ -134,11 +134,12 @@ Testdateien_calibration
 
 ![Testdateien_calibration](https://github.com/user-attachments/assets/4b8d48fd-3878-4fbb-98d1-bf67d3177c63)
 
-Video benchmark
+Video benchmark:
 
 ![Video benchmark](https://github.com/user-attachments/assets/88d58dfd-fa7e-411a-bdc7-c65090aeacc6)
 
-NV12 coefficients
+NV12 coefficients:
+See https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-formats
 
 ![NV12 coefficients](https://github.com/user-attachments/assets/bf8ee0b6-81d3-445f-84d2-3b8725b20581)
 

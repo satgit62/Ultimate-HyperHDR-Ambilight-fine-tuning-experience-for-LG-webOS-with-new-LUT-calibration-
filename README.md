@@ -92,15 +92,13 @@ The function should be switched off during calibration. Then you have to switch 
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
 
 # Source:
-# Download hyperion-webos von @s1mptom:https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235
-# Download org.webosbrew.hyperhdr.loader_0.1.9_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.1.9_all.ipk
-# Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link:https://drive.google.com/file/d/1eUXQ8pkaipQVP3nn4IWlnMKyj70w9YvE/view?usp=sharing
-# https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-formats
-# https://github.com/awawa-dev/HyperHDR/pull/920
-# https://github.com/awawa-dev/HyperHDR/pull/896
-# https://github.com/satgit62/hyperhdr-webos-loader
-# https://github.com/s1mptom/hyperion-webos/tree/main
-# Video calibration test files:https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
+Download hyperion-webos von @s1mptom:https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235
+Download org.webosbrew.hyperhdr.loader_0.1.9_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.1.9_all.ipk
+Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link:https://drive.google.com/file/d/1eUXQ8pkaipQVP3nn4IWlnMKyj70w9YvE/view?usp=sharing
+https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-formats
+https://github.com/awawa-dev/HyperHDR/pull/920
+https://github.com/awawa-dev/HyperHDR/pull/896
+https://github.com/satgit62/hyperhdr-webos-loader https://github.com/s1mptom/hyperion-webos/tree/main Video calibration test files:https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
 
 
 

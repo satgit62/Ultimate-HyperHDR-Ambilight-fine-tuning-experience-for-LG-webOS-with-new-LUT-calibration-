@@ -29,7 +29,7 @@ Source code:
  * #define LUT_TABLE_FILENAME_DV “lut_lin_tables_dv.3d”
  * #define LUT_TABLE_FILENAME_SDR “lut_lin_tables.3d”
 
-In our case, this means that we replace the new LUTs (lut_lin_tables.3d, lut_lin_tables_dv.3d and lut_lin_tables_hdr.3d) with the standard LUT.
+In our case, this means that the new LUTs (lut_lin_tables.3d, lut_lin_tables_dv.3d and lut_lin_tables_hdr.3d) replace the standard LUTs.
 
 For this, @awawa-dev has also added a new LUT calibration option for our WebOS Flatbuffers, which allows us to play different test videos directly on our devices to generate the different LUTs.
 YUV coefficients are switched during LUT calibration thanks to the native NV12 format. This was not possible for the pure RGB flat buffer stream.

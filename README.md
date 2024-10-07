@@ -75,6 +75,12 @@ When switching from an SDR video to an HDR or DV video, the HDR (global) mode is
 
 When returning to an SDR video, the HDR (global) mode is automatically switched off and the SDR LUT is requested.
 
+# Note:
+
+Since the /home partition is limited in terms of disk space, always make sure that there is enough disk space available for the LUT calibration in '/home/root/.hyperhdr/'. A full LUT requires approx. 144 MB (150,994,944 bytes) of memory. Otherwise, an invalid LUT with an impermissibly large size will end up there.
+You can check the size of the partition in Terminal/Putty-SSH with the command 'df -h'.
+This also determines whether only two or even all three LUTs can operate there.
+
 If you decide to calibrate LUTs yourself, make sure that you set the resolution in PicCap/hyperion-webos to Manuel and set 1280 × 720, save and restart.
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
 After a successful calibration process, you can reduce the resolution in PicCap again and reactivate the “Quarter of frame for NV12” in HyperHDR.

@@ -100,8 +100,7 @@ Using different players and test files (calibration videos) may slightly affect 
 # Source:
 Download hyperion-webos von @s1mptom:https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235
 
-Download org.webosbrew.hyperhdr.loader_0.1.9_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.1.9_all.ipk
-
+Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link:https://drive.google.com/file/d/1eUXQ8pkaipQVP3nn4IWlnMKyj70w9YvE/view?usp=sharing
 
 Download Video calibration test files:https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration

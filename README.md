@@ -2,7 +2,8 @@
 
 This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR “ai_calibration” branch and @s1mptom changes in hyperion-webos fork “dile_vt_422_nv12” branch.
 
-Note: The modified hyperion-webos version of @s1mptom only supports video recording, but not the recording of the graphical user interface.
+# Note: 
+The modified hyperion-webos version of @s1mptom only supports video recording, but not the recording of the graphical user interface.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 

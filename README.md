@@ -55,16 +55,11 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 
 # 1.replace backends in hyperion-webos (PicCap):
 
-* a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill „$pid“; done` to terminate piccap with Hyperion process.
-  Alternatively, you can use this command to stop PicCap and start it again when you repeat it:
-  
-`if luna-send -n 1 'luna://org.webosbrew.piccap.service/status' '{}' | grep '“isRunning”:true'; then luna-send -n 1 'luna://org.webosbrew.piccap.service/stop' '{}' ; else luna-send -n 1 'luna://org.webosbrew.piccap.service/start' '{}' ; fi`
-
-You can also simply stop the service via PicCap GUI with Stop.
+* a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill "$pid"; done` to terminate piccap with Hyperion process.
 * b. Unzip the webos_backends.zip.
 * c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
 Note: The “hyperion-webos” file may need to be deleted first before it can be replaced.
-* d. Then you must execute: luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings "{\"use_direct_nv12\": true}" in Terminal/SSH to activate NV12 mode.
+* d. Then you must execute: `luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings "{\"use_direct_nv12\": true}"` in Terminal/SSH to activate NV12 mode.
 
 Note: If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame.
 

@@ -56,6 +56,9 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 # 1.replace backends in hyperion-webos (PicCap):
 
 * a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill „$pid“; done` to terminate piccap with Hyperion process.
+  Alternatively, you can use this command to stop PicCap and start it again when you repeat it:
+`if luna-send -n 1 'luna://org.webosbrew.piccap.service/status' '{}' | grep '“isRunning”:true'; then luna-send -n 1 'luna://org.webosbrew.piccap.service/stop' '{}' ; else luna-send -n 1 'luna://org.webosbrew.piccap.service/start' '{}' ; fi`
+Or you can simply stop the service in PicCap itself and replace the files. Note: The file “hyperion-webos” may need to be deleted first before it can be replaced
 * b. Unzip the webos_backends.zip.
 * c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
 * d. Then you must execute `luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings “{\”use_direct_nv12\“: true}” `in Terminal/SSH to activate NV12 mode.

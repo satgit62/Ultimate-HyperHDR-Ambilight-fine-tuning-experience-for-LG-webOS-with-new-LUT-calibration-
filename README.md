@@ -40,6 +40,8 @@ Even the first LUT calibration for SDR, using the reference test video for SDR, 
 
 # I have compiled the “hyperhdr-webos-loader” with the following new feature from @awawa-dev and built the installation package based on these changes and the purpose of the calibration:
 
+* Fix HyperHDR daemon when starting calibration process
+
 * Fix HyperHDR daemon at screensaver start 
   
 The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) 

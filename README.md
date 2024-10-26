@@ -1,9 +1,6 @@
 # Ultimate-HyperHDR-Ambilight-fine-tuning-experience-for-LG-webOS-with-new-LUT-calibration-
 
-This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR “ai_calibration” branch and @s1mptom changes in hyperion-webos fork “dile_vt_422_nv12” branch.
-
-# Note: 
-The modified hyperion-webos version of @s1mptom only supports video recording, but not the recording of the graphical user interface.
+This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR “ai_calibration” branch and @sundermann changes in hyperion-webos fork “nv12” branch.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 
@@ -23,6 +20,7 @@ Another problem was the use of a LUT table for different video types. With SDR v
 Thanks to a new calibration method implemented in HyperHDR, it is now possible to generate LUT tables with different color information depending on the video material being played.
 
 The second step was taken by user @s1mptom, in consultation with @awawa-dev, who himself was not entirely satisfied with the results of the modified backend. He adapted the hyperion-webos backend for the NV12 format and also added the use of multiple LUT tables. This finally makes it possible to use automatically calibrated LUT tables for the three different scenarios such as SDR, HDR+ and Dolby Vision video material in HyperHDR.
+The NV12 branch has also been implemented by @sundermann. 
 
 The following lines of code were added under other changes, by @s1mptom to the definition of the LUT table in the hyperion-webos backend (PicCap).
 
@@ -58,12 +56,13 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 # 1.replace backends in hyperion-webos (PicCap):
 
 * a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill "$pid"; done` to terminate piccap with Hyperion process.
-* b. Unzip the webos_backends.zip.
+* b. Download and unzip the hyperion_webos_Release.zip.
 * c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
-Note: The “hyperion-webos” file may need to be deleted first before it can be replaced.
-* d. Then you must execute: `luna-send -n 1 -f luna://org.webosbrew.piccap.service/setSettings "{\"use_direct_nv12\": true}"` in Terminal/SSH to activate NV12 mode.
+Note: The “hyperion-webos” file may need to be deleted first before it can be replaced. (You can use FileZilla or webOS Dev Manager for this purpose)
 
-Note: If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame.
+Note: The NV12 must be activated in config.json from `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` by inserting the "nv12":true followed by a (,) to the next option and saving it.
+
+If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame.
 
 # 2. HyperHDR installation instructions:
 
@@ -75,7 +74,7 @@ Note: If NV12 mode has been successfully activated, this is displayed in the log
 * f. Using FileZilla or webOS Dev Manager, save the 50 MB “flat_lut_lin_tables.3d” from `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and then delete it from the above-mentioned directory.
 * g. Using FileZilla or webOS Dev Manager, also delete the “lut_lin_tables.3d” from `/home/root/.hyperhdr/` directory of your TV.
 * h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
-* i. In HyperHDR under Network Settings, Flatbuffer Server, activate the HDR to SDR sound mapping Quarter of frame for NV12.
+* i. In HyperHDR under Network Settings, Flatbuffer Server, activate HDR-to-SDR tone mapping in HyperHDR under Network Settings, Flatbuffer Server and, if required, Quarter of Frame for NV12. (Quarter of Frame for NV12 reduces the CPU load when the HyperHDR daemon is active, with relatively little loss of quality)
 
 When switching from an SDR video to an HDR or DV video, the HDR (global) mode is automatically switched on and the LUT requested by the backend is searched for, loaded in HyperHDR and displayed in the log:
 
@@ -107,7 +106,7 @@ The function should be switched off during calibration. Then you have to switch 
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
 
 # Source:
-Download hyperion-webos von @s1mptom:https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235
+Download hyperion-webos von @sundermann:[https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235](https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749)
 
 Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk
 
@@ -122,6 +121,8 @@ https://github.com/awawa-dev/HyperHDR/pull/920
 https://github.com/awawa-dev/HyperHDR/pull/896
 
 https://github.com/satgit62/hyperhdr-webos-loader
+
+https://github.com/sundermann/hyperion-webos/tree/nv12
 
 https://github.com/s1mptom/hyperion-webos/tree/main 
 

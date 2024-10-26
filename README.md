@@ -76,7 +76,7 @@ If NV12 mode has been successfully activated, this is displayed in the log: [FLA
 * e. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
 * f. Using FileZilla or webOS Dev Manager, save the 50 MB “flat_lut_lin_tables.3d” from `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and then delete it from the above-mentioned directory.
 * g. Using FileZilla or webOS Dev Manager, also delete the “lut_lin_tables.3d” from `/home/root/.hyperhdr/` directory of your TV.
-* h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d, to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
+* h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d, to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d, to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
 * i. In HyperHDR under Network Settings, Flatbuffer Server, activate HDR-to-SDR tone mapping in HyperHDR under Network Settings, Flatbuffer Server and, if required, Quarter of Frame for NV12. (Quarter of Frame for NV12 reduces the CPU load when the HyperHDR daemon is active, with relatively little loss of quality)
 
 When switching from an SDR video to an HDR or DV video, the HDR (global) mode is automatically switched on and the LUT requested by the backend is searched for, loaded in HyperHDR and displayed in the log:
@@ -84,7 +84,7 @@ When switching from an SDR video to an HDR or DV video, the HDR (global) mode is
 [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_dv.3d'
 [FLATBUFSERVER] (LutLoader.cpp:82) LUT file found: /home/root/.hyperhdr/lut_lin_tables_dv.3d
 
-When returning to an SDR video, the HDR (global) mode is automatically switched off and the SDR LUT is requested.
+When returning to an SDR video, the HDR (global) mode is automatically switched off and the SDR LUT (lut_lin_tables.3d) is requested.
 
 # Attention!
 

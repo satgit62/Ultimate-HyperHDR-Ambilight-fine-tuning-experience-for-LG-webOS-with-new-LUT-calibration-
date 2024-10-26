@@ -22,7 +22,7 @@ Thanks to a new calibration method implemented in HyperHDR, it is now possible t
 The second step was taken by user @s1mptom, in consultation with @awawa-dev, who himself was not entirely satisfied with the results of the modified backend. He adapted the hyperion-webos backend for the NV12 format and also added the use of multiple LUT tables. This finally makes it possible to use automatically calibrated LUT tables for the three different scenarios such as SDR, HDR+ and Dolby Vision video material in HyperHDR.
 The NV12 branch has also been implemented by @sundermann. 
 
-The following lines of code were added under other changes, by @s1mptom to the definition of the LUT table in the hyperion-webos backend (PicCap).
+The following lines of code were added under other changes, by @s1mptom/@sundermann to the definition of the LUT table in the hyperion-webos backend (PicCap).
 
 Source code:
 

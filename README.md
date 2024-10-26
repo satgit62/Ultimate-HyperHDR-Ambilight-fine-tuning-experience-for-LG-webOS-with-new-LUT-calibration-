@@ -61,7 +61,9 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
   
 Note: The “hyperion-webos” file may need to be deleted first before it can be replaced. (You can use FileZilla or webOS Dev Manager for this purpose)
 
-# Attention! The NV12 must be activated in config.json from `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` by inserting the "nv12":true followed by a (,) to the next option and saving it.
+# Attention! 
+
+The NV12 must be activated in config.json from `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` by inserting the "nv12":true followed by a (,) to the next option and saving it.
 
 If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame.
 

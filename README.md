@@ -107,7 +107,7 @@ After a successful calibration process, you can reduce the resolution in PicCap 
 
 # Important!
 At the end of calibration, the LUT is automatically saved in `/home/root/.hyperhdr/` under the name lut_lin_tables.3d.
-If the calibration was not performed for SDR, the LUT must also be renamed with the correct name lut_lin_tables_hdr.3d, lut_lin_tables_dv.3d and copied to the correct directory.
+If the calibration was not performed for SDR, the LUT must also be renamed with the correct name lut_lin_tables_hdr.3d or lut_lin_tables_dv.3d and copied to the correct directory.
 
 # Note on calibration videos:
 SDR refers to content without HDR/HLG or Dolby Vision. For this, you also have to use a calibration video such as test_SDR_yuv420_low_quality or test_SDR_yuv422_low_quality. As YUV422 is not so widespread, I have used test_SDR_yuv420_low_quality.

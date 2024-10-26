@@ -105,6 +105,10 @@ If you decide to calibrate LUTs yourself, make sure that you set the resolution 
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
 After a successful calibration process, you can reduce the resolution in PicCap again and reactivate the “Quarter of frame for NV12” in HyperHDR.
 
+# Important!
+At the end of calibration, the LUT is automatically saved in `/home/root/.hyperhdr/` under the name lut_lin_tables.3d.
+If the calibration was not performed for SDR, the LUT must also be renamed with the correct name lut_lin_tables_hdr.3d, lut_lin_tables_dv.3d and copied to the correct directory.
+
 # Note on calibration videos:
 SDR refers to content without HDR/HLG or Dolby Vision. For this, you also have to use a calibration video such as test_SDR_yuv420_low_quality or test_SDR_yuv422_low_quality. As YUV422 is not so widespread, I have used test_SDR_yuv420_low_quality.
 

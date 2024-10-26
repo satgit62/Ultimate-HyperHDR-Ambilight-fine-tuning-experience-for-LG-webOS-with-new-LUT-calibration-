@@ -115,7 +115,7 @@ SDR refers to content without HDR/HLG or Dolby Vision. For this, you also have t
 The same applies to HDR or DV
 So take the appropriate videos for the desired LUT calibration.
 
-The HDR to SDR sound mapping automatically controls the HDR (Global) switch, under remote control on or off, when SDR or HDR/DV is played.
+The HDR to SDR tone mapping automatically controls the HDR (Global) switch, under remote control on or off, when SDR or HDR/DV is played.
 The function should be switched off during calibration. Then you have to switch it on again.
 
 # Note from @awawa-dev:

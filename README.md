@@ -56,6 +56,7 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 # 1.replace backends in hyperion-webos (PicCap):
 
 * a. Connect to your TV via SSH/Telnet and execute the following command `pgrep -fl piccap | while read -r pid _; do kill "$pid"; done` to terminate piccap with Hyperion process.
+  [syntax]pgrep -fl piccap | while read -r pid _; do kill "$pid"; done[/syntax]
 * b. Download and unzip the hyperion_webos_Release.zip.
 * c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
   

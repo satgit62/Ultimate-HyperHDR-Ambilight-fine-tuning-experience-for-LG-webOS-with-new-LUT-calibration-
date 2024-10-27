@@ -122,7 +122,7 @@ The function should be switched off during calibration. Then you have to switch 
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
 
 # Source:
-Download hyperion-webos von @sundermann:[https://github.com/s1mptom/hyperion-webos/actions/runs/10928329050/artifacts/1949551235](https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749)
+Download hyperion-webos von @sundermann:https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749
 
 Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk
 

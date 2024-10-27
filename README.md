@@ -26,9 +26,9 @@ The following lines of code were added under other changes, by @s1mptom/@sunderm
 
 Source code:
 
-   | #define LUT_TABLE_FILENAME_HDR “lut_lin_tables_hdr.3d”
-   | #define LUT_TABLE_FILENAME_DV “lut_lin_tables_dv.3d”
-   | #define LUT_TABLE_FILENAME_SDR “lut_lin_tables.3d”
+   * #define LUT_TABLE_FILENAME_HDR “lut_lin_tables_hdr.3d”
+   * #define LUT_TABLE_FILENAME_DV “lut_lin_tables_dv.3d”
+   * #define LUT_TABLE_FILENAME_SDR “lut_lin_tables.3d”
 
 In our case, this means that the new LUTs (lut_lin_tables.3d, lut_lin_tables_dv.3d and lut_lin_tables_hdr.3d) replace the standard LUTs.
 

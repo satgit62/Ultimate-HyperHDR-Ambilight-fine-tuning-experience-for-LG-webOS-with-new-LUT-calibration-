@@ -122,13 +122,13 @@ The function should be switched off during calibration. Then you have to switch 
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
 
 # Source:
-Download hyperion-webos von @sundermann:https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749
+Download hyperion-webos von @sundermann: https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749
 
-Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk:https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk
+Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk
 
-Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link:https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
+Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 
-Download Video calibration test files:https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
+Download Video calibration test files: https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
 
 https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-formats
 

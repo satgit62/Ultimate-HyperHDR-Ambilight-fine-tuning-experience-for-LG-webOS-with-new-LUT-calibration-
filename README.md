@@ -136,8 +136,6 @@ https://github.com/awawa-dev/HyperHDR/pull/920
 
 https://github.com/awawa-dev/HyperHDR/pull/896
 
-https://github.com/satgit62/hyperhdr-webos-loader
-
 https://github.com/satgit62/hyperion-webos/tree/nv12
 
 https://github.com/sundermann/hyperion-webos/tree/nv12

@@ -2,6 +2,8 @@
 
 This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR “ai_calibration” branch and @sundermann changes in hyperion-webos fork “nv12” branch.
 
+# UPDATE: 
+“hyperion-webos” (Merge pull request #123 from sundermann/nv12) has been added to the https://github.com/webosbrew/hyperion-webos Main Branch.
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 
 The first step was achieved by @awawa-dev by implementing NV12 in HyperHDR.

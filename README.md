@@ -62,7 +62,9 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 * b. Download and unzip the hyperion_webos_Release.zip.
 * c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
   
-# Note: The “hyperion-webos” file may need to be deleted first before it can be replaced. You can use FileZilla or webOS Dev Manager for this purpose. Use the “webOS Dev Manager” only under Connection “Use SSH Server by Homebrew Channel” (Requires Rooted TV) with the username = root, password = alpine and port = 22. Attention! You should never install the Developer Mode App on a rooted device. This will result in the loss of root.
+# Note: 
+
+The “hyperion-webos” file may need to be deleted first before it can be replaced. You can use FileZilla or webOS Dev Manager for this purpose. Use the “webOS Dev Manager” only under Connection “Use SSH Server by Homebrew Channel” (Requires Rooted TV) with the username = root, password = alpine and port = 22. Attention! You should never install the Developer Mode App on a rooted device. This will result in the loss of root.
 
 ![webOS Dev Manager Connection Mode](https://github.com/user-attachments/assets/f97bba50-c975-4961-b0f4-1861f43fe8a9)
 

@@ -74,6 +74,10 @@ Attention! You should never install the Developer Mode App on a rooted device. T
 
 ![webOS Dev Manager Files](https://github.com/user-attachments/assets/4401d43c-e4d8-4108-aae6-a9e475b106a4)
 
+The easiest way to exchange files is FileZilla.
+
+![FileZilla](https://github.com/user-attachments/assets/29e3fdd2-b75e-410f-a48d-71536ed08c5e)
+
 
 # Attention! 
 

@@ -158,6 +158,10 @@ https://github.com/sundermann/hyperion-webos/tree/nv12
 
 https://github.com/s1mptom/hyperion-webos/tree/main 
 
+https://github.com/webosbrew/dev-manager-desktop
+
+https://filezilla-project.org/download.php?type=client
+
 HyperHDR version:
 
 ![About HyperHDR](https://github.com/user-attachments/assets/11e3e22c-7df4-437d-a016-231a776e76e7)

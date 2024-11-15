@@ -70,6 +70,9 @@ The “hyperion-webos” file may need to be deleted first before it can be repl
 
 ![webOS Dev Manager Authentication](https://github.com/user-attachments/assets/74d336ae-582f-4289-8209-07f8d8ede7ab)
 
+![webOS Dev Manager Files](https://github.com/user-attachments/assets/4401d43c-e4d8-4108-aae6-a9e475b106a4)
+
+
 # Attention! 
 
 The NV12 must be activated in `config.json` from `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` by inserting the `"nv12":true` followed by a (,) to the next option and saving it.

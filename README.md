@@ -135,9 +135,9 @@ So take the appropriate videos for the desired LUT calibration.
 
 The HDR to SDR tone mapping automatically controls the HDR (Global) switch, under remote control on or off, when SDR or HDR/DV is played.
 The function should be switched off during calibration. Then you have to switch it on again.
-
-# Note from @awawa-dev:
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
+See also the calibration guide from @awawa-dev:
+https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 
 # Source:
 Download hyperion-webos von @sundermann: https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749

@@ -3,6 +3,9 @@
 This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR “ai_calibration” branch and @sundermann changes in hyperion-webos fork “nv12” branch.
 
 # UPDATE: 
+
+"ai_calibration" branch was merged into "master" branch and HyperHDR 21.0.0.0beta1 released.
+
 “hyperion-webos” (Merge pull request #123 from sundermann/nv12) has been added to the https://github.com/webosbrew/hyperion-webos Main Branch.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
@@ -143,7 +146,7 @@ https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 # Source:
 Download hyperion-webos von @sundermann: https://github.com/sundermann/hyperion-webos/actions/runs/11521810240/artifacts/2105108749
 
-Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk
+Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk (HyperHDR 21.0.0.0beta1)
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 

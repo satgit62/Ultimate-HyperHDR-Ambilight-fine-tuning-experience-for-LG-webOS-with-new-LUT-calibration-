@@ -1,12 +1,17 @@
 # Ultimate-HyperHDR-Ambilight-fine-tuning-experience-for-LG-webOS-with-new-LUT-calibration-
 
-This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR “ai_calibration” branch and @sundermann changes in hyperion-webos fork “nv12” branch.
-
-# UPDATE: 
+This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR and @sundermann changes in hyperion-webos fork “nv12” branch.
 
 "ai_calibration" branch was merged into "master" branch and HyperHDR 21.0.0.0beta1 released.
 
-“hyperion-webos” (Merge pull request #123 from sundermann/nv12) has been added to the https://github.com/webosbrew/hyperion-webos Main Branch.
+# UPDATE from 09.12.2024
+
+According to @awawa-dev a bug was discovered in the nv12 backend regarding the SDR LUT, using multiple LUT's. (SDR, HDR and DV)
+The backend always disables tone mapping when SDR is detected on WebOS. However, tone mapping must always be activated in this case, otherwise it makes no sense to create a separate LUT for SDR.
+See: https://github.com/awawa-dev/HyperHDR/pull/896#issuecomment-2525662688
+The automatic activation/deactivation of the HDR Global switch, provided that “HDR to SDR tone mapping” is selected under Network Services, Flatbuffer, only applies when using a single LUT table. With multiple LUTs the tone mapping must always be on.
+For this reason, I have made the necessary change in the code and recompiled the hyperion-webos backend. If you are using multiple LUT's, please replace the old one with the new hyperion-webos backens. 
+
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 
@@ -100,12 +105,12 @@ If NV12 mode has been successfully activated, this is displayed in the log: [FLA
 * h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d, to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d, to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
 * i. In HyperHDR under Network Settings, Flatbuffer Server, activate HDR-to-SDR tone mapping in HyperHDR under Network Settings, Flatbuffer Server and, if required, Quarter of Frame for NV12. (Quarter of Frame for NV12 reduces the CPU load when the HyperHDR daemon is active, with relatively little loss of quality)
 
-When switching from an SDR video to an HDR or DV video, the HDR (global) mode is automatically switched on and the LUT requested by the backend is searched for, loaded in HyperHDR and displayed in the log:
+When switching from an SDR video to an HDR or DV video, the LUT requested by the backend is searched for, loaded into HyperHDR and displayed in the log:
 
 [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_dv.3d'
 [FLATBUFSERVER] (LutLoader.cpp:82) LUT file found: /home/root/.hyperhdr/lut_lin_tables_dv.3d
 
-When returning to an SDR video, the HDR (global) mode is automatically switched off and the SDR LUT (lut_lin_tables.3d) is requested.
+When returning to an SDR video, the SDR LUT (lut_lin_tables.3d) is requested and applied.
 
 # Attention!
 

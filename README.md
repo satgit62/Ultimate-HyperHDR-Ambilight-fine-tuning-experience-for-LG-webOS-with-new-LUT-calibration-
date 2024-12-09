@@ -47,7 +47,7 @@ For this, @awawa-dev has also added a new LUT calibration option for our WebOS F
 YUV coefficients are switched during LUT calibration thanks to the native NV12 format. This was not possible for the pure RGB flat buffer stream.
 Even the first LUT calibration for SDR, using the reference test video for SDR, “test_SDR_yuv420_low_quality”, produced a remarkable color correction.
 
-# I have compiled the “hyperhdr-webos-loader” with the following new feature from @awawa-dev and built the installation package based on these changes and the purpose of the calibration:
+I have compiled the “hyperhdr-webos-loader” with the following new feature from @awawa-dev and built the installation package based on these changes and the purpose of the calibration:
 
 * Fix HyperHDR daemon when starting calibration process
 

@@ -12,7 +12,7 @@ The backend always disables tone mapping when SDR is detected on WebOS. However,
 See: https://github.com/awawa-dev/HyperHDR/pull/896#issuecomment-2525662688
 The automatic activation/deactivation of the HDR Global switch, provided that “HDR to SDR tone mapping” is selected under Network Services, Flatbuffer, only applies when using a single LUT table. With multiple LUTs the tone mapping must always be on.
 For this reason, I have made the necessary change in the code and recompiled the hyperion-webos backends. If you are using multiple LUT's, please replace the old one with the new hyperion-webos backends. 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 

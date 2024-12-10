@@ -6,7 +6,8 @@ This guide here is based on @awawa-dev New LUT Calibration implementations in Hy
 
 # UPDATE from 09.12.2024
 
-According to @awawa-dev a bug was discovered in the nv12 backend regarding the SDR LUT, using multiple LUT's. (SDR, HDR and DV)
+According to @awawa-dev, a bug has been discovered in the NV12 backend that affects the SDR LUT (#define LUT_TABLE_FILENAME_SDR "lut_lin_tables.3d"). This is important for all users who use multiple LUTs such as SDR, HDR and DV.
+
 The backend always disables tone mapping when SDR is detected on WebOS. However, tone mapping must always be activated in this case, otherwise it makes no sense to create a separate LUT for SDR.
 See: https://github.com/awawa-dev/HyperHDR/pull/896#issuecomment-2525662688
 The automatic activation/deactivation of the HDR Global switch, provided that “HDR to SDR tone mapping” is selected under Network Services, Flatbuffer, only applies when using a single LUT table. With multiple LUTs the tone mapping must always be on.

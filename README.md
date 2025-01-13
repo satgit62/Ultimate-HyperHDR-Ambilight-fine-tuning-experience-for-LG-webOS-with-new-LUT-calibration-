@@ -150,7 +150,7 @@ See also the calibration guide from @awawa-dev:
 https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 
 # Source:
-Download hyperion-webos: https://github.com/satgit62/hyperion-webos/actions/runs/12232031341/artifacts/2292506957
+Download hyperion-webos: https://github.com/webosbrew/hyperion-webos/actions/runs/12244511211/artifacts/2296363294
 
 Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk (HyperHDR 21.0.0.0beta1)
 

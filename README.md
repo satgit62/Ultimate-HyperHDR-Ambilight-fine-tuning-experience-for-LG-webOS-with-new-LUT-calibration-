@@ -122,11 +122,17 @@ This also determines whether only two or even all three LUTs can operate there.
 Alternatively, to avoid the lack of space in `/home/root/.hyperhdr/`, all three LUT's table can be copied to  `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and symlinks to 
 `/home/root/.hyperhdr/` as in the following example:
 
-`ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables.3d /home/root/.hyperhdr/lut_lin_tables_sdr.3d`
+```
+ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables.3d /home/root/.hyperhdr/lut_lin_tables_sdr.3d
+```
 
-`ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_hdr.3d /home/root/.hyperhdr/lut_lin_tables_hdr.3d`
+```
+ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_hdr.3d /home/root/.hyperhdr/lut_lin_tables_hdr.3d
+```
 
-`ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_dv.3d /home/root/.hyperhdr/lut_lin_tables_dv.3d`
+```
+ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_dv.3d /home/root/.hyperhdr/lut_lin_tables_dv.3d
+```
 
 If you decide to calibrate LUTs yourself, make sure that you set the resolution in PicCap/hyperion-webos to Manuel and set 1280 × 720, save and restart.
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)

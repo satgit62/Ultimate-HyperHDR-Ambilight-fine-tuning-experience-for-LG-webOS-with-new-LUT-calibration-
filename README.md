@@ -140,7 +140,7 @@ ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.serv
 
 If you decide to calibrate LUTs yourself, make sure that you set the resolution in PicCap/hyperion-webos to Manuel and set 1280 × 720, save and restart.
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
-After a successful calibration, you can reduce the resolution in PicCap and reactivate the 'Quarter of image for NV12' option in HyperHDR if the CPU load is too high.
+After a successful calibration, you can reduce the resolution in PicCap and reactivate the option ‘Quarter of image for NV12’ in HyperHDR only if the CPU load is too high.
 
 Note: Enabling 'Quarter of image for NV12' will reduce the CPU load, but the image resolution will be reduced accordingly. However, this is enough to control the LEDs correctly.
 

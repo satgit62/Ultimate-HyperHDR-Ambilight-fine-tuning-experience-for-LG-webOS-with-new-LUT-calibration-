@@ -146,6 +146,7 @@ Note: Enabling 'Quarter of image for NV12' will reduce the CPU load, but the ima
 
 # Attention!
 Some devices absolutely need 360x180. In this case, do not activate ‘Quarter of image for NV12’.
+
 The most common resolutions for PicCap are:
 ```
 128x72

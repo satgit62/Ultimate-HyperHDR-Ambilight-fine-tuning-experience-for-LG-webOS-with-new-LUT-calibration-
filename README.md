@@ -67,7 +67,7 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 
 # Update from 19.01.2025
 
-To simplify the whole replacement of the hyperion-webos backends, I created a new PicCap with the latest backends and added a NV12 selection field to the user interface, with the option to save the selected NV12 setting in the config.json. 
+To simplify the whole replacement of the hyperion-webos backends, I created a new PicCap v0.5.0 with the latest backends and added a NV12 selection field to the user interface, with the option to save the selected NV12 setting in the config.json. 
 See: https://github.com/satgit62/PicCap-hyperion-webos-NV12-Test/tree/main
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 
@@ -78,6 +78,7 @@ After successful installation and Services Elevation, you need to reboot, open P
 If the installation of PicCap v.0.5.0 was successful, you do not need to carry out the following procedure, point "1. Replace backends in hyperion-webos (PicCap)" and can continue directly with point "2. HyperHDR installation instructions".
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 1. Replace backends in hyperion-webos (PicCap):
 
 * a. Connect to your TV via SSH/Telnet and execute the following command to terminate piccap with Hyperion process:

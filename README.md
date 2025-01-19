@@ -65,7 +65,7 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 * More precise saving/loading of color images
 * Corrected calibration for 1280×720 recording settings
 
-# 1.replace backends in hyperion-webos (PicCap):
+# 1. Replace backends in hyperion-webos (PicCap):
 
 * a. Connect to your TV via SSH/Telnet and execute the following command to terminate piccap with Hyperion process:
 ```

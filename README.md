@@ -69,6 +69,7 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 
 To simplify the whole replacement of the hyperion-webos backends, I created a new PicCap v0.5.0 with the latest backends and added a NV12 selection field to the user interface, with the option to save the selected NV12 setting in the config.json. 
 See: https://github.com/satgit62/PicCap-hyperion-webos-NV12-Test/tree/main
+
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 
 ![PicCap GUI](https://github.com/user-attachments/assets/538d6912-9c05-4574-80b2-189de86a2989)

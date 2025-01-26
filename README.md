@@ -136,7 +136,7 @@ When switching from an SDR video to an HDR or DV video, the LUT requested by the
 
 When returning to an SDR video, the SDR LUT (lut_lin_tables.3d) is requested and applied.
 
-# Attention!
+# Note:
 
 Since the `/home` partition is limited in terms of disk space, always make sure that there is enough disk space available for the LUT calibration in `/home/root/.hyperhdr/`. A full LUT requires approx. 144 MB (150,994,944 bytes) of memory. Otherwise, an invalid LUT with an impermissibly large size will end up there.
 You can check the size of the partition in Terminal/Putty-SSH with the command `df -h`.

@@ -157,6 +157,13 @@ ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.serv
 ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_dv.3d /home/root/.hyperhdr/lut_lin_tables_dv.3d
 ```
 
+# UPDATE 27.01.2025:
+
+There is a new way to work around the lack of memory on some LG devices when running multiple LUTs for SDR, HDR and Dolby DV in `/home/root/.hyperhdr/`. @awawa-dev, has implemented a new compression method in HyperHDR that allows the use of compressed LUTs.
+The new compression method compresses the LUTs from 150 MB to less than 10 MB and decompresses them in near real time.
+
+See instructions at: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
+
 If you decide to calibrate LUTs yourself, make sure that you set the resolution in PicCap/hyperion-webos to Manuel and set 1280 × 720, save and restart.
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
 After a successful calibration, you can reduce the resolution in PicCap and reactivate the option ‘Quarter of image for NV12’ in HyperHDR only if the CPU load is too high.

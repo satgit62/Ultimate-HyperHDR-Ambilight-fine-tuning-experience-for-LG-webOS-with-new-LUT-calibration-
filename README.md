@@ -65,14 +65,10 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 * More precise saving/loading of color images
 * Corrected calibration for 1280×720 recording settings
 
-# Update from 19.01.2025
+# UPDATE vom 29.01.2025:
 
-To simplify the whole replacement of the hyperion-webos backends, I created a new PicCap v0.5.0 with the latest backends and added a NV12 selection field to the user interface, with the option to save the selected NV12 setting in the config.json. 
-See: https://github.com/satgit62/PicCap-hyperion-webos-NV12-Test/tree/main
-
-You can test the new PicCap if you like. 
-
-Download Link: https://github.com/satgit62/PicCap-hyperion-webos-NV12-Test/raw/refs/heads/main/org.webosbrew.piccap_0.5.0_all.ipk
+Version 0.5.0 von PicCap mit der neuen Backends und NV12 ist offiziell im Homebrew Channel veröffentlicht worden. 😃 
+https://github.com/TBSniller/piccap/releases/tag/0.5.0
 
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 

@@ -115,9 +115,11 @@ If NV12 mode has been successfully activated, this is displayed in the log: [FLA
 
 # 2. HyperHDR installation instructions:
 
+Minimum HyperHDR v21 beta1 is required for this feature
+
 * a. Start HyperHDR app and stop the services/daemon.
 * b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
-* c. Install HyperHDR version 21.0.0.0alpha0 Build ai_calibration branch from attachment (org.webosbrew.hyperhdr.loader_0.2.0_all.ipk).
+* c. Install HyperHDR version HyperHDR v21 beta2 from attachment (org.webosbrew.hyperhdr.loader_0.2.0_all.ipk).
 * d. Start HyperHDR app and start the services/daemon.
 * e. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
 * f. Use FileZilla or webOS Dev Manager to delete the 50 MB file “flat_lut_lin_tables.3d” from `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.

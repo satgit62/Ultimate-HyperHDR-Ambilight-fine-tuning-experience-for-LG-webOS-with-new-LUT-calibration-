@@ -68,7 +68,8 @@ The HyperHDR daemon is no longer stopped when the internal screensaver or the cu
 # UPDATE vom 29.01.2025:
 
 Version 0.5.0 von PicCap mit der neuen Backends und NV12 ist offiziell im Homebrew Channel veröffentlicht worden. 😃 
-https://github.com/TBSniller/piccap/releases/tag/0.5.0
+
+https://github.com/TBSniller/piccap/releases/download/0.5.0/org.webosbrew.piccap_0.5.0_all.ipk
 
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 

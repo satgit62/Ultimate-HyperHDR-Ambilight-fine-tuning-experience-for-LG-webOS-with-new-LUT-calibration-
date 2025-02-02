@@ -215,12 +215,6 @@ https://github.com/awawa-dev/HyperHDR/pull/896
 
 https://github.com/webosbrew/hyperion-webos
 
-https://github.com/satgit62/hyperion-webos/tree/nv12
-
-https://github.com/sundermann/hyperion-webos/tree/nv12
-
-https://github.com/s1mptom/hyperion-webos/tree/main 
-
 https://github.com/webosbrew/dev-manager-desktop
 
 https://filezilla-project.org/download.php?type=client

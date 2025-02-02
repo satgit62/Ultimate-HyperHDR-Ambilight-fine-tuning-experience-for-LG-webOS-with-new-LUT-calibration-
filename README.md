@@ -201,7 +201,7 @@ https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 # Source:
 Download hyperion-webos: https://github.com/webosbrew/hyperion-webos/actions/runs/12244511211/artifacts/2296363294
 
-Download org.webosbrew.hyperhdr.loader_0.2.0_all.ipk: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.2.0_all.ipk (HyperHDR 21.0.0.0beta1)
+Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.1.11_all.ipk (HyperHDR 21.0.0.0beta2)
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 

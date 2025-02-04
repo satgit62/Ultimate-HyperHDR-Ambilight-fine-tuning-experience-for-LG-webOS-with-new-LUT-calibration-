@@ -2,7 +2,7 @@
 
 This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos, @neogeo Add Settings Panel with LUT installation selector option in Settings menu of hyperhdr-webos-loader and Add NV12 to PicCap-UI by @satgit62.
 
-# PiCap v0.5.0 und HyperHDR 21.0.0.0beta2 (org.webosbrew.hyperhdr.loader_0.2.1_all.ipk) werden für die Anwendung dieses Leitfadens vorausgesetzt.
+PiCap v0.5.0 und HyperHDR 21.0.0.0beta2 (org.webosbrew.hyperhdr.loader_0.2.1_all.ipk) werden für die Anwendung dieses Leitfadens vorausgesetzt.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 

@@ -58,7 +58,7 @@ The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
 
 # UPDATE vom 29.01.2025:
 
-Version 0.5.0 von PicCap mit der neuen Backends und NV12 ist offiziell im Homebrew Channel veröffentlicht worden. 😃 
+Version 0.5.0 of PicCap with the new backends and NV12 has been officially released in the Homebrew Channel. 😃 
 
 # To avoid errors, please do not use any other version!
 
@@ -97,7 +97,7 @@ After you have selected/approved the LUT, wait until Success! appears in the bot
 
 * f. Click on the left arrow in the top left-hand corner of the menu to go to the main menu.
 * g. Use the slider to activate the Automatic start option.
-* h. Starten Sie der Daemon in dem sie auf Start betätigen. Warten Sie, bis der Start angezeigt wird.
+* h. Start the daemon by clicking on Start. Wait until the start is displayed.
 * i. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
 
 The uncompressed LUTs are installed to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and the corresponding symlinks are set to `/home/root/.hyperhdr/`.

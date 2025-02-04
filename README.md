@@ -1,22 +1,10 @@
 # Ultimate-HyperHDR-Ambilight-fine-tuning-experience-for-LG-webOS-with-new-LUT-calibration-
 
-This guide here is based on @awawa-dev New LUT Calibration implementations in HyperHDR and @sundermann changes in hyperion-webos fork “nv12” branch.
+This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos, @neogeo Add Settings Panel with LUT installation selector option in Settings menu of hyperhdr-webos-loader and Add NV12 to PicCap-UI by @satgit62.
 
-"ai_calibration" branch was merged into "master" branch and HyperHDR 21.0.0.0beta1 released.
-
-# UPDATE from 09.12.2024
-
-According to @awawa-dev, a bug has been discovered in the NV12 backend that affects the SDR LUT (#define LUT_TABLE_FILENAME_SDR "lut_lin_tables.3d"). This is important for all users who use multiple LUTs such as SDR, HDR and DV.
-
-The backend always disables tone mapping when SDR is detected on WebOS. However, tone mapping must always be activated in this case, otherwise it makes no sense to create a separate LUT for SDR.
-See: https://github.com/awawa-dev/HyperHDR/pull/896#issuecomment-2525662688
-The automatic activation/deactivation of the HDR Global switch, provided that “HDR to SDR tone mapping” is selected under Network Services, Flatbuffer, only applies when using a single LUT table. With multiple LUTs the tone mapping must always be on.
-For this reason, I have made the necessary change in the code and recompiled the hyperion-webos backends. If you are using multiple LUT's, please replace the old one with the new hyperion-webos backends. 
-
+# PiCap v0.5.0 und HyperHDR 21.0.0.0beta2 werden für die Anwendung dieses Leitfadens vorausgesetzt.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
-
-The first step was achieved by @awawa-dev by implementing NV12 in HyperHDR.
 
 # Advantages:
 
@@ -31,43 +19,48 @@ If the NV12 transport mode is used, HyperHDR requires a complete standard LUT ta
 Another problem was the use of a LUT table for different video types. With SDR video material, for example, the colors of the LEDs matched, but with HDR the colors were distorted and very weak with Dolby Vision.
 Thanks to a new calibration method implemented in HyperHDR, it is now possible to generate LUT tables with different color information depending on the video material being played.
 
-The second step was taken by user @s1mptom, in consultation with @awawa-dev, who himself was not entirely satisfied with the results of the modified backend. He adapted the hyperion-webos backend for the NV12 format and also added the use of multiple LUT tables. This finally makes it possible to use automatically calibrated LUT tables for the three different scenarios such as SDR, HDR+ and Dolby Vision video material in HyperHDR.
-The NV12 branch has also been implemented by @sundermann. 
-
-The following lines of code were added under other changes, by @s1mptom/@sundermann to the definition of the LUT table in the hyperion-webos backend (PicCap).
+The following lines of code were added under other changes, by @s1mptom and @sundermann to the definition of the LUT table in the hyperion-webos backend (PicCap).
 
 Source code:
-
+```
    * #define LUT_TABLE_FILENAME_HDR “lut_lin_tables_hdr.3d”
    * #define LUT_TABLE_FILENAME_DV “lut_lin_tables_dv.3d”
    * #define LUT_TABLE_FILENAME_SDR “lut_lin_tables.3d”
+```
 
 In our case, this means that the new LUTs (lut_lin_tables.3d, lut_lin_tables_dv.3d and lut_lin_tables_hdr.3d) replace the standard LUTs.
 
-For this, @awawa-dev has also added a new LUT calibration option for our WebOS Flatbuffers, which allows us to play different test videos directly on our devices to generate the different LUTs.
-YUV coefficients are switched during LUT calibration thanks to the native NV12 format. This was not possible for the pure RGB flatbuffer stream.
-Even the first LUT calibration for SDR, using the reference test video for SDR, “test_SDR_yuv420_low_quality”, produced a remarkable color correction.
+Thanks to the implementation of a new ZSTD compression process by @awawa-de, compressed LUTs are now permitted and available without any loss of quality. They are automatically detected and applied in real time.
 
-I have compiled the “hyperhdr-webos-loader” with the following new feature from @awawa-dev and built the installation package based on these changes and the purpose of the calibration:
+	* lut_lin_tables_hdr.3d.zst
+	* lut_lin_tables_dv.3d.zst
+	* lut_lin_tables.3d.zst
 
-* Fix HyperHDR daemon when starting calibration process
+I have recompiled the “hyperhdr-webos-loader” with the following new feature:
 
-* Fix HyperHDR daemon at screensaver start 
-  
-The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) 
-* Added support for NV12 image format for flat buffers
-* ai_calibration:
-* Denoising algorithm that significantly improves calibration results with YUV420 format, especially YUV420 LIMITED
-* Added Quarter of frame for NV12 for Flatbuffers Server reduces CPU and memory load
-* Grabber benchmark support for flat buffers
-* Added SDR support for libdile
-* Added support for SDR (BT2020 in SRGB) calibration
-* More precise saving/loading of color images
-* Corrected calibration for 1280×720 recording settings
+* Add Settings Panel with Lut install selector by @neogeo
+* Fix HyperHDR daemon when starting calibration process by @satgit62
+
+The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
+
+* Support for Home Assistant lights
+* Experimental direct support for zigbee2mqtt
+* Support for ZSTD compression for all LUT files
+* Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
+* Added support for NV12 image format for flat buffers by @awawa-dev
+* ai_calibration by @awawa-dev
+* Denoising algorithm that significantly improves calibration results with YUV420 format, especially YUV420 LIMITED by @awawa-dev
+* Added Quarter of frame for NV12 for Flatbuffers Server reduces CPU and memory load by @awawa-dev
+* Grabber benchmark support for flat buffers by @awawa-dev
+* Added support for SDR (BT2020 in SRGB) calibration by @awawa-dev
+* More precise saving/loading of color images by @awawa-dev
+* Corrected calibration for 1280×720 recording settings by @awawa-dev
 
 # UPDATE vom 29.01.2025:
 
 Version 0.5.0 von PicCap mit der neuen Backends und NV12 ist offiziell im Homebrew Channel veröffentlicht worden. 😃 
+
+# To avoid errors, please do not use any other version!
 
 https://github.com/TBSniller/piccap/releases/download/0.5.0/org.webosbrew.piccap_0.5.0_all.ipk
 
@@ -75,93 +68,51 @@ After successful installation and Services Elevation, you need to reboot, open P
 
 ![PicCap GUI](https://github.com/user-attachments/assets/538d6912-9c05-4574-80b2-189de86a2989)
 
-# Note
-
-If the installation of PicCap v.0.5.0 was successful, you do not need to carry out the following procedure, point "1. Replace backends in hyperion-webos (PicCap)" and can continue directly with point "2. HyperHDR installation instructions".
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# 1. Replace backends in hyperion-webos (PicCap):
-
-* a. Connect to your TV via SSH/Telnet and execute the following command to terminate piccap with Hyperion process:
-```
-pgrep -fl piccap | while read -r pid _; do kill "$pid"; done
-```
-
-* b. Download and unzip the hyperion_webos_Release.zip.
-* c. You must then copy all new backend files to `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` and replace the old backend files.
-  
-# Note: 
-
-The “hyperion-webos” file may need to be deleted first before it can be replaced. You can use FileZilla or webOS Dev Manager for this purpose. Use the “webOS Dev Manager” only under Connection “Use SSH Server by Homebrew Channel” (Requires Rooted TV) with the username = root, password = alpine and port = 22. 
-
-Attention! You should never install the Developer Mode App on a rooted device. This will result in the loss of root.
-
-![webOS Dev Manager Connection Mode](https://github.com/user-attachments/assets/f97bba50-c975-4961-b0f4-1861f43fe8a9)
-
-![webOS Dev Manager Authentication](https://github.com/user-attachments/assets/74d336ae-582f-4289-8209-07f8d8ede7ab)
-
-![webOS Dev Manager Files](https://github.com/user-attachments/assets/4401d43c-e4d8-4108-aae6-a9e475b106a4)
-
-The easiest way to exchange files is FileZilla.
-
-![FileZilla](https://github.com/user-attachments/assets/29e3fdd2-b75e-410f-a48d-71536ed08c5e)
-
-
-# Attention! 
-
-The NV12 must be activated in `config.json` from `/media/developer/apps/usr/palm/services/org.webosbrew.piccap.service/` by inserting the `"nv12":true` followed by a (,) to the next option and saving it.
-
-If NV12 mode has been successfully activated, this is displayed in the log: [FLATBUFSERVER] (FlatBuffersServer.cpp:338) Received first NV12 frame and instead of “(LutLoader.cpp:x) Index 0 for HDR RGB”, “(LutLoader.cpp:x) Index 1 for HDR YUV” is recognized.
 
 # 2. HyperHDR installation instructions:
 
-Minimum HyperHDR v21 beta1 is required for this feature
+How to install .ipk files without Homebrew Channel can be found in my other guide. See: https://github.com/satgit62/How-to-Install-and-set-up-Ambilight-on-LG-webOS#manual-installation-of-apps-without-homebrew-channel.
+
+Please use only this version for these instructions.
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.1_all.ipk
+
+To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
 * a. Start HyperHDR app and stop the services/daemon.
 * b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
-* c. Install HyperHDR version HyperHDR v21 beta2 from attachment (org.webosbrew.hyperhdr.loader_0.2.0_all.ipk).
-* d. Start HyperHDR app and start the services/daemon.
-* e. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
-* f. Use FileZilla or webOS Dev Manager to delete the 50 MB file “flat_lut_lin_tables.3d” from `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
-* g. Using FileZilla or webOS Dev Manager, also delete the “lut_lin_tables.3d” from `/home/root/.hyperhdr/` directory of your TV.
-* h. Download the LUT.zip, unzip it and copy the contents of the LUT folders lut_lin_tables_hdr.3d and lut_lin_tables_dv.3d, to `/home/root/.hyperhdr/` using FileZilla or webOS Dev Manager on the TV and copy lut_lin_tables.3d, to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`.
-* i. In HyperHDR under Network Settings, Flatbuffer Server, activate HDR-to-SDR tone mapping in HyperHDR under Network Settings, Flatbuffer Server and, if required, Quarter of Frame for NV12. (Quarter of Frame for NV12 reduces the CPU load when the HyperHDR daemon is active, with relatively little loss of quality)
+* c. Install the new webos HyperHDR loader (org.webosbrew.hyperhdr.loader_0.2.1_all.ipk).
+* d. Start the HyperHDR application and go to the settings in the top right corner. (gear wheel) See image.
+
+![1](https://github.com/user-attachments/assets/5cc42a32-a857-4573-89a8-7227be62b02b)
+
+* e. The next step is to select the LUT version to install. Compressed and uncompressed LUT versions are available for NV12. By default, only one LUT is installed and NV12 must be disabled in PicCap.
+
+![2](https://github.com/user-attachments/assets/2640dc01-26d6-4709-a0d9-7cf1c6e9d667)
+
+After you have selected/approved the LUT, wait until Success! appears in the bottom left corner of Result.
+
+![3](https://github.com/user-attachments/assets/57d5c7fa-19d0-4a10-a770-7e7be84ea344)
+
+![4](https://github.com/user-attachments/assets/3e6ad088-6e8f-4344-b8f6-c1847e99964a)
+
+* f. Click on the left arrow in the top left-hand corner of the menu to go to the main menu.
+* g. Use the slider to activate the Automatic start option.
+* h. Starten Sie der Daemon in dem sie auf Start betätigen. Warten Sie, bis der Start angezeigt wird.
+* i. Reboot. Make sure that Quick Start+ in the menu of your LG is switched off.
+
+The uncompressed LUTs are installed to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and the corresponding symlinks are set to `/home/root/.hyperhdr/`.
+The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
+
+# Note
+
+If NV12 mode has been successfully activated, this is displayed in the HyperHDR log: [FLATBUFSERVER] (FlatBuffersServer.cpp:xxx) Received first NV12 frame and instead of “(LutLoader.cpp:x) Index 0 for HDR RGB”, “(LutLoader.cpp:x) Index 1 for HDR YUV” is recognized.
 
 When switching from an SDR video to an HDR or DV video, the LUT requested by the backend is searched for, loaded into HyperHDR and displayed in the log:
 
 [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_dv.3d'
 [FLATBUFSERVER] (LutLoader.cpp:82) LUT file found: /home/root/.hyperhdr/lut_lin_tables_dv.3d
 
-When returning to an SDR video, the SDR LUT (lut_lin_tables.3d) is requested and applied.
-
-# Note:
-
-Since the `/home` partition is limited in terms of disk space, always make sure that there is enough disk space available for the LUT calibration in `/home/root/.hyperhdr/`. A full LUT requires approx. 144 MB (150,994,944 bytes) of memory. Otherwise, an invalid LUT with an impermissibly large size will end up there.
-You can check the size of the partition in Terminal/Putty-SSH with the command `df -h`.
-This also determines whether only two or even all three LUTs can operate there.
-
-Alternatively, to avoid the lack of space in `/home/root/.hyperhdr/`, all three LUT's table can be copied to  `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and symlinks to 
-`/home/root/.hyperhdr/` as in the following example:
-
-```
-ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables.3d /home/root/.hyperhdr/lut_lin_tables_sdr.3d
-```
-
-```
-ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_hdr.3d /home/root/.hyperhdr/lut_lin_tables_hdr.3d
-```
-
-```
-ln -s /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/lut_lin_tables_dv.3d /home/root/.hyperhdr/lut_lin_tables_dv.3d
-```
-
-# UPDATE 27.01.2025:
-
-There is a new way to Workaround the lack of memory on some LG devices when running multiple LUTs for SDR, HDR and Dolby DV in `/home/root/.hyperhdr/`. @awawa-dev, has implemented a new compression method in HyperHDR that allows the use of compressed LUTs.
-The new compression method compresses the LUTs from 150 MB to less than 10 MB and decompresses them in near real time.
-
-See instructions at: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
+# LUT 
 
 If you decide to calibrate LUTs yourself, make sure that you set the resolution in PicCap/hyperion-webos to Manuel and set 1280 × 720, save and restart.
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
@@ -181,43 +132,34 @@ The most common resolutions for PicCap are:
 360x180
 ```
 
-# Important!
-At the end of calibration, the LUT is automatically saved in `/home/root/.hyperhdr/` under the name lut_lin_tables.3d.
-If the calibration was not performed for SDR, the LUT must also be renamed with the correct name lut_lin_tables_hdr.3d or lut_lin_tables_dv.3d and moved to the correct directory.
-
 # Note on calibration videos:
-SDR refers to content without HDR/HLG or Dolby Vision. For this, you also have to use a calibration video such as test_SDR_yuv420_low_quality or test_SDR_yuv422_low_quality. As YUV422 is not so widespread, I have used test_SDR_yuv420_low_quality.
+SDR refers to content without HDR/HLG or Dolby Vision. For this, you also have to use a calibration video such as calibration_HDR_yuv420_limited_range.mp4, calibration_SDR_yuv420_limited_range.mp4, for_testing_after_calibration_HDR_yuv420_limited_range.mp4
 
-The same applies to HDR or DV
+For DV calibration, use the `test_DV_yuv420_low_quality.mp4` file. See above in Main 
+
 So take the appropriate videos for the desired LUT calibration.
 
-The HDR to SDR tone mapping automatically controls the HDR (Global) switch, under remote control on or off, when SDR or HDR/DV is played.
-The function should be switched off during calibration. Then you have to switch it on again.
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
+
+# Important!
+At the end of calibration, the LUT is automatically saved in `/home/root/.hyperhdr/` under the name lut_lin_tables.3d.
+
+If the calibration was not performed for SDR, the LUT must also be renamed with the correct name lut_lin_tables_hdr.3d or lut_lin_tables_dv.3d and moved to the correct directory.
 
 See also the calibration guide from @awawa-dev:
 https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 
-# Source:
-Download hyperion-webos: https://github.com/webosbrew/hyperion-webos/actions/runs/12244511211/artifacts/2296363294
+If you would like to compress your self-calibrated LUTs, please read the following instructions:: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
 
-Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/hyperhdr-webos-loader/releases/download/latest/org.webosbrew.hyperhdr.loader_0.1.11_all.ipk (HyperHDR 21.0.0.0beta2)
+# Source:
+
+Download org.webosbrew.hyperhdr.loader:https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.1_all.ipk (HyperHDR 21.0.0.0beta2)
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 
 Download Video calibration test files: https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
 
-https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-formats
-
-https://github.com/awawa-dev/HyperHDR/pull/920
-
-https://github.com/awawa-dev/HyperHDR/pull/896
-
-https://github.com/webosbrew/hyperion-webos
-
 https://github.com/webosbrew/dev-manager-desktop
-
-https://filezilla-project.org/download.php?type=client
 
 HyperHDR version:
 

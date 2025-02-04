@@ -110,7 +110,9 @@ The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 
 # Note
 
-If NV12 mode has been successfully activated, this is displayed in the HyperHDR log: `[FLATBUFSERVER] (FlatBuffersServer.cpp:xxx) Received first NV12 frame and instead of “(LutLoader.cpp:x) Index 0 for HDR RGB”, “(LutLoader.cpp:x) Index 1 for HDR YUV”` is recognized.
+If NV12 mode has been successfully activated, this is displayed in the HyperHDR log:
+
+`[FLATBUFSERVER] (FlatBuffersServer.cpp:xxx) Received first NV12 frame and instead of “(LutLoader.cpp:x) Index 0 for HDR RGB”, “(LutLoader.cpp:x) Index 1 for HDR YUV”` 
 
 When switching from an SDR video to an HDR or DV video, the LUT requested by the backend is searched for, loaded into HyperHDR and displayed in the log:
 

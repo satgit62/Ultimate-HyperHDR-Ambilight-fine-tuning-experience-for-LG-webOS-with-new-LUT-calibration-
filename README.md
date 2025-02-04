@@ -45,13 +45,13 @@ I have recompiled the “hyperhdr-webos-loader” with the following new feature
 
 * Add Settings Panel with Lut install selector by @neogeo
 * Fix HyperHDR daemon when starting calibration process by @satgit62
+* Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
 The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
 
 * Support for Home Assistant lights
 * Experimental direct support for zigbee2mqtt
 * Support for ZSTD compression for all LUT files
-* Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 * Added support for NV12 image format for flat buffers by @awawa-dev
 * ai_calibration by @awawa-dev
 * Denoising algorithm that significantly improves calibration results with YUV420 format, especially YUV420 LIMITED by @awawa-dev

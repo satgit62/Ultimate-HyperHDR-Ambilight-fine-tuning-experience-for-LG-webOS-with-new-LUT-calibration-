@@ -5,7 +5,7 @@ Since some inexperienced users recently found this guide too complicated and als
 
 With the changes in the PicCap UI, the additional code from @neogeo for the HyperHDR installer and the countless tips from @awawa-dev, I was finally able to put together a new HyperHDR version that simplifies everything.
 
-This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos, @neogeo Add Settings Panel with LUT installation selector option in Settings menu of hyperhdr-webos-loader and Add NV12 to PicCap-UI by @satgit62.
+This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos, @neogeo Add Settings Panel with LUT installation selector option in Settings menu of hyperhdr-webos-loader and Add NV12 to PicCap-UI by @TBSniller & @satgit62.
 
 PiCap v0.5.0 and HyperHDR 21.0.0.0beta2 (org.webosbrew.hyperhdr.loader_0.2.1_all.ipk) are required to use this guide.
 

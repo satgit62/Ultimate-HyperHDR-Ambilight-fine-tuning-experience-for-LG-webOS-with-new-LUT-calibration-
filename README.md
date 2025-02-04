@@ -109,8 +109,10 @@ If NV12 mode has been successfully activated, this is displayed in the HyperHDR 
 
 When switching from an SDR video to an HDR or DV video, the LUT requested by the backend is searched for, loaded into HyperHDR and displayed in the log:
 
+```
 [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_dv.3d'
 [FLATBUFSERVER] (LutLoader.cpp:82) LUT file found: /home/root/.hyperhdr/lut_lin_tables_dv.3d
+```
 
 # LUT 
 

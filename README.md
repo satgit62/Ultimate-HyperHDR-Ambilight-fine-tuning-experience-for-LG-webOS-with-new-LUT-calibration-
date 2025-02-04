@@ -165,7 +165,7 @@ https://github.com/webosbrew/dev-manager-desktop
 
 HyperHDR version:
 
-![About HyperHDR](https://github.com/user-attachments/assets/11e3e22c-7df4-437d-a016-231a776e76e7)
+![Version](https://github.com/user-attachments/assets/45cca928-3ad1-45aa-b55c-2ec5d7ce6f7d)
 
 LUT_calibration:
 

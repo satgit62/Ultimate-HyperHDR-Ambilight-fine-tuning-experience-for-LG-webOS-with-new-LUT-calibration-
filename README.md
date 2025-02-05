@@ -1,5 +1,12 @@
 # Ultimate-HyperHDR-Ambilight-fine-tuning-experience-for-LG-webOS-with-new-LUT-calibration-
 
+# Attention!
+
+This guide is not part of the official HyperHDR for WebOS from the homebrew channel and should not be followed unless you are willing to try something different from what is provided in the homebrew channel and get the maximum colour rendering from different LUTs. 
+Everything here is experimental and constantly being tweaked as @awawa-dev makes changes.
+There is no guarantee that the colour reproduction will be equally good on all devices.
+You may need to make adjustments yourself or even calibrate your external playback source. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Note
 Since some inexperienced users recently found this guide too complicated and also encountered errors when running it, I decided to simplify it so that everyone can run it.
 

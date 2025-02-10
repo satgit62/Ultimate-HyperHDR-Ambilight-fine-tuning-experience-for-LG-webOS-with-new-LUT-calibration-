@@ -78,7 +78,16 @@ https://github.com/TBSniller/piccap/releases/download/0.5.0/org.webosbrew.piccap
 
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 
+
 ![PicCap GUI](https://github.com/user-attachments/assets/538d6912-9c05-4574-80b2-189de86a2989)
+
+# Remark:
+SDR to HDR tone mapping must always be activated for NV12. Also for SDR content. This is how it should look for SDR, but also for HDR or DV content.
+
+![1](https://github.com/user-attachments/assets/4fbf8259-8770-48a6-aa1c-0dd949832947)
+
+# Attention! 
+When using the NV12 option with multiple LUTs, please do not activate the "Disable HyperHDR SDR HDR switch" option in the advanced settings of PicCap under any circumstances. 
 
 
 # 2. HyperHDR installation instructions:

@@ -72,7 +72,7 @@ The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
 
 UPDATE from 16/02/2025: 
 
-Version 0.5.1 of PicCap with the new NV12 backends  has been released. YUV422 to NV12 conversion has been added. 😃 
+Version 0.5.1 of PicCap with the new NV12 backends  has been released. YUV422 to NV12 conversion has been added. 
 
 # To avoid errors, please do not use any other version!
 

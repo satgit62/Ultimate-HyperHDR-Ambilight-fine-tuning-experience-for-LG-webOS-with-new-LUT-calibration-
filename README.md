@@ -68,13 +68,15 @@ The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
 * More precise saving/loading of color images by @awawa-dev
 * Corrected calibration for 1280×720 recording settings by @awawa-dev
 
-# UPDATE vom 29.01.2025:
+# UPDATE from 16/02/2025: 
 
-Version 0.5.0 of PicCap with the new backends and NV12 has been officially released in the Homebrew Channel. 😃 
+UPDATE from 16/02/2025: 
+
+Version 0.5.1 of PicCap with the new NV12 backends  has been released. YUV422 to NV12 conversion has been added. 😃 
 
 # To avoid errors, please do not use any other version!
 
-https://github.com/TBSniller/piccap/releases/download/0.5.0/org.webosbrew.piccap_0.5.0_all.ipk
+https://github.com/TBSniller/piccap/releases/download/0.5.1/org.webosbrew.piccap_0.5.1_all.ipk
 
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 

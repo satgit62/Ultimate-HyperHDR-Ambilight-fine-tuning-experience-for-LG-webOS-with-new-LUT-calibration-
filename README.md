@@ -148,16 +148,17 @@ Some devices absolutely need 360x180. In this case, do not activate ‘Quarter o
 
 The most common resolutions for PicCap are:
 ```
-128x72
-160x90
-192x108
-256x144
+384x216
 360x180
+256x144
+192x108
+160x90
+128x72
 ```
 
 # LUT 
 
-If you decide to calibrate LUTs yourself, make sure that you set the resolution in PicCap/hyperion-webos to Manuel and set 1280 × 720, save and restart.
+If you decide to calibrate the LUTs yourself, make sure you set the resolution in PicCap/Hyperion Webos to at least 1280x720, better 1920x1080, save and restart.
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
 After a successful calibration, you can reduce the resolution in PicCap and reactivate the option ‘Quarter of image for NV12’ in HyperHDR only if the CPU load is too high.
 

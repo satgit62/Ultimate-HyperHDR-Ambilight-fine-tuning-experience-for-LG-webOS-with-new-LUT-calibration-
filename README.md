@@ -159,7 +159,12 @@ The most common resolutions for PicCap are:
 # LUT 
 
 If you decide to calibrate the LUTs yourself, make sure you set the resolution in PicCap/Hyperion Webos to at least 1280x720, better 1920x1080, save and restart.
+
+As the calibration is very CPU intensive, I recommend to calibrate on an external HyperHDR, e.g. on Windows or Raspberry Pi.
+The external IP address of the HyperHDR has to be temporarily entered in PicCap.
+
 The new function in HyperHDR “Quarter of frame for NV12” under Network, Flatbuffers server must also be switched off for this process. (otherwise you will get the minimum requirement for calibration of 1280 × 720 in HyperHDR)
+
 After a successful calibration, you can reduce the resolution in PicCap and reactivate the option ‘Quarter of image for NV12’ in HyperHDR only if the CPU load is too high.
 
 Comment: Enabling 'Quarter of image for NV12' will reduce the CPU load, but the image resolution will be reduced accordingly. However, this is enough to control the LEDs correctly.

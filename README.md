@@ -105,8 +105,9 @@ To avoid errors, please uninstall HyperHDR webos-loader if you have installed a 
 * b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
 * c. Install the new webos HyperHDR loader (org.webosbrew.hyperhdr.loader_0.2.1_all.ipk).
 * d. Start the HyperHDR application and go to the settings in the top right corner. (gear wheel) See image.
+  
+![v21](https://github.com/user-attachments/assets/203590cc-4b5a-485e-bde1-a11949e48e95)
 
-![1](https://github.com/user-attachments/assets/5cc42a32-a857-4573-89a8-7227be62b02b)
 
 * e. The next step is to select the LUT version to install. Compressed and uncompressed LUT versions are available for NV12. By default, only one LUT is installed and NV12 must be disabled in PicCap.
 

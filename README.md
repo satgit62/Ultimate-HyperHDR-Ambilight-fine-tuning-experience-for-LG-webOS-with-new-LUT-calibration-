@@ -148,6 +148,10 @@ SDR to HDR tone mapping must always be activated for NV12. Also for SDR content.
 # Attention!
 Some devices absolutely need 360x180. In this case, do not activate ‘Quarter of image for NV12’.
 
+The default PicCap resolution of 360x180 does not match the actual proportions of 4K video content, so you will need to manually enter 384x216 if you have a newer webOS. 
+Otherwise, you will need to select or manually enter 4K resolutions that can be divided by 10.
+If you are unsure, try everything from this table.
+
 The most common resolutions for PicCap are:
 ```
 384x216

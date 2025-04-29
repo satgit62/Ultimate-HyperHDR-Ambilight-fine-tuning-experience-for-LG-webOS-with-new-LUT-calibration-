@@ -162,6 +162,8 @@ The most common resolutions for PicCap are:
 128x72
 ```
 
+# Note: It has been reported that the LG option “Instant Game Response” prevents the correct LUT from being loaded.
+
 # LUT 
 
 If you decide to calibrate the LUTs yourself, make sure you set the resolution in PicCap/Hyperion Webos to at least 1280x720, better 1920x1080, save and restart.

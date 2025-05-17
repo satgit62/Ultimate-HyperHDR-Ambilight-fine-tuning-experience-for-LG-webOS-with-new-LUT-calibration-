@@ -221,7 +221,6 @@ You must make the fine adjustments under Remote Control Live Calibration and if 
 ![Classic HyperHDR calibration](https://github.com/user-attachments/assets/a4120ea5-cc0a-48cc-be1e-639d4df6e931)
 
 
-
 # Source:
 
 Download org.webosbrew.hyperhdr.loader:https://github.com/satgit62/satgit62.github.io/raw/refs/heads/main/org.webosbrew.hyperhdr.loader_0.2.5_all.ipk
@@ -232,23 +231,15 @@ Download Video calibration test files: https://github.com/awawa-dev/awawa-dev.gi
 
 https://github.com/webosbrew/dev-manager-desktop
 
-HyperHDR version:
+# HyperHDR version:
 
 ![Version](https://github.com/user-attachments/assets/45cca928-3ad1-45aa-b55c-2ec5d7ce6f7d)
 
-LUT_calibration_1:
-
-![LUT_calibration](https://github.com/user-attachments/assets/4fa881f3-ae17-4281-bc03-19e2c14f9772)
-
-LUT_calibration_2:
-
-![LUT_calibration1](https://github.com/user-attachments/assets/97cddfb5-4627-4b61-a29a-fabfa96e6b06)
-
-NV12 Mode Log:
+# NV12 Mode Log:
 
 ![NV12 Mode Log](https://github.com/user-attachments/assets/76b22449-62e2-4f46-8f95-3733e1540e67)
 
-Quarter of frame for NV12:
+# Quarter of frame for NV12:
 
 ![Quarter of frame for NV12](https://github.com/user-attachments/assets/ae2b4746-7d93-40ac-b8b9-cdaa16475116)
 

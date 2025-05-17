@@ -196,6 +196,10 @@ https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 
 If you would like to compress your self-calibrated LUTs, please read the following instructions:: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
 
+# HyperHDR Image Processing
+
+Finally, you can make fine adjustments such as gamma or saturation under Image editing using calibrated colour templates. Colour templates are located at the top of Main.
+
 # Source:
 
 Download org.webosbrew.hyperhdr.loader:https://github.com/satgit62/satgit62.github.io/raw/refs/heads/main/org.webosbrew.hyperhdr.loader_0.2.5_all.ipk

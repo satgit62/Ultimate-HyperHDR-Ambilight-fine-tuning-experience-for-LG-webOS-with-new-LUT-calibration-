@@ -198,7 +198,7 @@ If you would like to compress your self-calibrated LUTs, please read the followi
 
 # HyperHDR Image Processing
 
-Finally, you can make fine adjustments such as gamma or saturation under Image editing using calibrated colour templates. Colour templates are located at the top of Main.
+Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or saturation under Image editing using calibrated colour templates. Colour templates are located at the top of Main.
 
 # Source:
 

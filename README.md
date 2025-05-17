@@ -48,7 +48,7 @@ Thanks to the implementation of a new ZSTD compression process by @awawa-de, com
 	* lut_lin_tables_dv.3d.zst
 	* lut_lin_tables.3d.zst
 
-I have recompiled the “hyperhdr-webos-loader” with the following new feature:
+I have recompiled the hyperhdr-webos-loader with HyperHDR Released v21.0.0.0 with the following new function:
 
 * Add Settings Panel with Lut install selector by @neogeo
 * Fix HyperHDR daemon when starting calibration process by @satgit62

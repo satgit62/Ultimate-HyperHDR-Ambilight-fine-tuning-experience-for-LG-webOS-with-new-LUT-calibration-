@@ -233,7 +233,10 @@ https://github.com/webosbrew/dev-manager-desktop
 
 # HyperHDR version:
 
-![Version](https://github.com/user-attachments/assets/45cca928-3ad1-45aa-b55c-2ec5d7ce6f7d)
+![1](https://github.com/user-attachments/assets/d327c478-9006-4ba4-aa87-7d493aeb9632)
+
+![2](https://github.com/user-attachments/assets/d196223e-c94f-4427-afd3-e33305510c0a)
+
 
 # NV12 Mode Log:
 

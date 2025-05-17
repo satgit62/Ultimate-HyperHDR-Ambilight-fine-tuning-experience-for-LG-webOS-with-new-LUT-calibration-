@@ -202,9 +202,14 @@ Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or sat
 
 You must make the fine adjustments under Remote Control Live Calibration and if the results are good, then you must enter and save the values in HyperHDR under Image Processing.
 
+# Live calibration
+
 ![Live calibration](https://github.com/user-attachments/assets/41c5cf8a-a344-4fb4-bffc-9b10090e3750)
 
-![Classic HyperHDR calibration](https://github.com/user-attachments/assets/63f4bdde-a4ea-427d-91f6-ddc8dd0412ee)
+# Image Processing
+
+![Classic HyperHDR calibration](https://github.com/user-attachments/assets/a4120ea5-cc0a-48cc-be1e-639d4df6e931)
+
 
 
 # Source:

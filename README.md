@@ -200,6 +200,13 @@ If you would like to compress your self-calibrated LUTs, please read the followi
 
 Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or saturation under Image editing using calibrated colour templates. Colour templates are located at the top of Main.
 
+You must make the fine adjustments under Remote Control Live Calibration and if the results are good, then you must enter and save the values in HyperHDR under Image Processing.
+
+![Live calibration](https://github.com/user-attachments/assets/41c5cf8a-a344-4fb4-bffc-9b10090e3750)
+
+![Classic HyperHDR calibration](https://github.com/user-attachments/assets/63f4bdde-a4ea-427d-91f6-ddc8dd0412ee)
+
+
 # Source:
 
 Download org.webosbrew.hyperhdr.loader:https://github.com/satgit62/satgit62.github.io/raw/refs/heads/main/org.webosbrew.hyperhdr.loader_0.2.5_all.ipk

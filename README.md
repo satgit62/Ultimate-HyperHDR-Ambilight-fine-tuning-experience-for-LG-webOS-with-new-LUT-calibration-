@@ -186,6 +186,15 @@ So take the appropriate videos for the desired LUT calibration.
 
 Using different players and test files (calibration videos) may slightly affect the calibration result and color reproduction, so it is better to test different combinations if something does not fit.
 
+LUT_calibration_1:
+
+![LUT_calibration](https://github.com/user-attachments/assets/4fa881f3-ae17-4281-bc03-19e2c14f9772)
+
+LUT_calibration_2:
+
+![LUT_calibration1](https://github.com/user-attachments/assets/97cddfb5-4627-4b61-a29a-fabfa96e6b06)
+
+
 # Important!
 At the end of calibration, the LUT is automatically saved in `/home/root/.hyperhdr/` under the name lut_lin_tables.3d.
 
@@ -195,6 +204,7 @@ See also the calibration guide from @awawa-dev:
 https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 
 If you would like to compress your self-calibrated LUTs, please read the following instructions:: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
+
 
 # HyperHDR Image Processing
 
@@ -226,11 +236,11 @@ HyperHDR version:
 
 ![Version](https://github.com/user-attachments/assets/45cca928-3ad1-45aa-b55c-2ec5d7ce6f7d)
 
-LUT_calibration:
+LUT_calibration_1:
 
 ![LUT_calibration](https://github.com/user-attachments/assets/4fa881f3-ae17-4281-bc03-19e2c14f9772)
 
-LUT_calibration:
+LUT_calibration_2:
 
 ![LUT_calibration1](https://github.com/user-attachments/assets/97cddfb5-4627-4b61-a29a-fabfa96e6b06)
 

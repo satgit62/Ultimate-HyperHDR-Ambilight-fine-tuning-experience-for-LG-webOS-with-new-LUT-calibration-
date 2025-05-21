@@ -95,7 +95,7 @@ When using the NV12 option with multiple LUTs, please do not activate the "Disab
 
 How to install .ipk files without Homebrew Channel can be found in my other guide. See: https://github.com/satgit62/How-to-Install-and-set-up-Ambilight-on-LG-webOS#manual-installation-of-apps-without-homebrew-channel.
 
-Please use only this version for these instructions:
+# Please use only this version for these instructions:
 
 https://github.com/satgit62/satgit62.github.io/raw/refs/heads/main/org.webosbrew.hyperhdr.loader_0.2.5_all.ipk
 

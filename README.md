@@ -214,11 +214,13 @@ You must make the fine adjustments under Remote Control Live Calibration and if 
 
 # Live calibration
 
-![Live calibration](https://github.com/user-attachments/assets/41c5cf8a-a344-4fb4-bffc-9b10090e3750)
+![YELLOW Color template](https://github.com/user-attachments/assets/8f4fa1a4-5294-4564-8ffb-4200f916927b)
+
 
 # Image Processing
 
-![Classic HyperHDR calibration](https://github.com/user-attachments/assets/a4120ea5-cc0a-48cc-be1e-639d4df6e931)
+![1](https://github.com/user-attachments/assets/84560a03-76ff-402b-b78d-36342b296f6f)
+
 
 
 # Source:

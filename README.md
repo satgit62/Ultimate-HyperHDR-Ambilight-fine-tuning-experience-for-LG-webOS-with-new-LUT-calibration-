@@ -97,13 +97,13 @@ How to install .ipk files without Homebrew Channel can be found in my other guid
 
 # Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/raw/refs/heads/main/org.webosbrew.hyperhdr.loader_0.2.5_all.ipk
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.6_all.ipk
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
 * a. Start HyperHDR app and stop the services/daemon.
 * b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
-* c. Install the new webos HyperHDR loader (org.webosbrew.hyperhdr.loader_0.2.5_all.ipk).
+* c. Install the new webos HyperHDR loader (org.webosbrew.hyperhdr.loader_0.2.6_all.ipk).
 * d. Start the HyperHDR application and go to the settings in the top right corner. (gear wheel) See image.
   
 ![v21](https://github.com/user-attachments/assets/203590cc-4b5a-485e-bde1-a11949e48e95)
@@ -225,7 +225,7 @@ You must make the fine adjustments under Remote Control Live Calibration and if 
 
 # Source:
 
-Download org.webosbrew.hyperhdr.loader:https://github.com/satgit62/satgit62.github.io/raw/refs/heads/main/org.webosbrew.hyperhdr.loader_0.2.5_all.ipk
+Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.6_all.ipk
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 

@@ -219,6 +219,9 @@ You must make the fine adjustments under Remote Control Live Calibration and if 
 
 # Image Processing
 
+If the colors are too strong, first reduce the saturation to a value of 1. Then increase the gamma values gradually and proportionally until the desired effect is achieved.
+The RGB gamma values do not have to be the same and can vary depending on the color adjustment. A good value is 2.
+
 ![1](https://github.com/user-attachments/assets/84560a03-76ff-402b-b78d-36342b296f6f)
 
 

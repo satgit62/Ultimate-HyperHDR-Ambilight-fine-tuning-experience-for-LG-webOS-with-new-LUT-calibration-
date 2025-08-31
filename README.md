@@ -217,16 +217,15 @@ You must make the fine adjustments under Remote Control Live Calibration and if 
 
 # Live calibration
 
-![YELLOW Color template](https://github.com/user-attachments/assets/8f4fa1a4-5294-4564-8ffb-4200f916927b)
+<img width="1804" height="852" alt="Live calibration" src="https://github.com/user-attachments/assets/14258954-3ea5-475e-8c88-3f690dcb056c" />
 
 
 # Image Processing
 
-If the colors are too strong, first reduce the saturation to a value of 1. Then increase the gamma values gradually and proportionally until the desired effect is achieved.
-The RGB gamma values do not have to be the same and can vary depending on the color adjustment. A good value is 2.
+If the colors are not intense enough, increase the saturation. Increase or decrease the gamma values gradually until the desired effect is achieved.
+Adjust the temperature according to your LED type.
 
-![1](https://github.com/user-attachments/assets/84560a03-76ff-402b-b78d-36342b296f6f)
-
+<img width="1912" height="1059" alt="Infinite Color Engine1" src="https://github.com/user-attachments/assets/8c9bfc5f-6eea-46da-87fe-ab7d9e008b47" />
 
 
 # Source:

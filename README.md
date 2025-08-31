@@ -243,7 +243,7 @@ https://github.com/webosbrew/dev-manager-desktop
 
 ![1](https://github.com/user-attachments/assets/d327c478-9006-4ba4-aa87-7d493aeb9632)
 
-![2](https://github.com/user-attachments/assets/d196223e-c94f-4427-afd3-e33305510c0a)
+<img width="1895" height="808" alt="version" src="https://github.com/user-attachments/assets/47ab764d-7c25-4e0a-a33f-227364937287" />
 
 
 # NV12 Mode Log:

@@ -90,8 +90,7 @@ After successful installation and Services Elevation, you need to reboot, open P
 # Attention! 
 When using the NV12 option with multiple LUTs, please do not activate the "Disable HyperHDR SDR/HDR switch" option in the advanced settings of PicCap under any circumstances.
 
-
-![Advanced Settings](https://github.com/user-attachments/assets/9fdd3689-2a2e-4fae-944a-77753695a68f)
+<img width="1451" height="817" alt="advances settings" src="https://github.com/user-attachments/assets/11ba33bf-6a8f-49c7-87c7-757653b8fd73" />
 
 
 # 2. HyperHDR installation instructions:

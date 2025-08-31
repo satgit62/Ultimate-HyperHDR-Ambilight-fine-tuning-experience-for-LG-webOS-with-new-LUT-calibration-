@@ -56,6 +56,9 @@ I have recompiled the hyperhdr-webos-loader with HyperHDR Released v21.0.0.0 wit
 
 The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
 
+* Infinite Color Engine
+* New Smoothing Algorithms
+* Full support for ftdi and libftdi
 * Support for Home Assistant lights
 * Experimental direct support for zigbee2mqtt
 * Support for ZSTD compression for all LUT files
@@ -97,7 +100,7 @@ How to install .ipk files without Homebrew Channel can be found in my other guid
 
 # Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.6_all.ipk
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.7_all.ipk
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
@@ -228,7 +231,7 @@ The RGB gamma values do not have to be the same and can vary depending on the co
 
 # Source:
 
-Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.6_all.ipk
+Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.7_all.ipk
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 

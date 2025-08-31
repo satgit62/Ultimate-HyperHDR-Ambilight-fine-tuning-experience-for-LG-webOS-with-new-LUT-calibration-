@@ -54,7 +54,7 @@ I have recompiled the hyperhdr-webos-loader with HyperHDR Released v21.0.0.0 wit
 * Fix HyperHDR daemon when starting calibration process by @satgit62
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
-The following features have been added to HyperHDR 21.0.0.0beta2 by @awawa-dev:
+The following features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
 * Infinite Color Engine
 * New Smoothing Algorithms

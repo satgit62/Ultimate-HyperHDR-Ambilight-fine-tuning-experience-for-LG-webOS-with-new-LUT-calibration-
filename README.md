@@ -94,7 +94,7 @@ When using the NV12 option with multiple LUTs, please do not activate the "Disab
 
 # UPDATE from 05/09/2025:
 
-Since HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to also switch the HyperHDR loader for webOS to QT 6.8.3 with the help of @awawa-dev. This will prevent future compatibility issues. It also ensures that this branch is 100 percent compatible with the new features already integrated in this version, as well as with future features.
+Since HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to also switch the HyperHDR loader for webOS to QT 6.8.3 with the help of @awawa-dev. This will prevent future compatibility issues. It also ensures that this branch is 100 percent compatible with the new features already integrated in this version as well as with future features, and that no components of the app infringe on copyright. 
 
 # 2. HyperHDR installation instructions:
 

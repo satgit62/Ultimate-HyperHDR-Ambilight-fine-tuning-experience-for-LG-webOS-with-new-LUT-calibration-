@@ -92,14 +92,17 @@ When using the NV12 option with multiple LUTs, please do not activate the "Disab
 <img width="1451" height="817" alt="advances settings" src="https://github.com/user-attachments/assets/c396aed0-5bb0-4c01-9165-46cb50c540a9" />
 
 
+# UPDATE from 05/09/2025:
+
+Since the HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to switch the HyperHDR loader for webOS to QT 6.8.3 as well. This will prevent future compatibility issues. It also ensures that this branch is 100 percent compatible with the new features already integrated in this version, as well as with future features.
 
 # 2. HyperHDR installation instructions:
 
 How to install .ipk files without Homebrew Channel can be found in my other guide. See: https://github.com/satgit62/How-to-Install-and-set-up-Ambilight-on-LG-webOS#manual-installation-of-apps-without-homebrew-channel.
 
-# Please use only this version for these instructions:
+# To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.7_all.ipk
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.0_all.ipk
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
@@ -228,7 +231,7 @@ Adjust the temperature according to your LED type.
 
 # Source:
 
-Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.2.7_all.ipk
+Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.0_all.ipk
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 
@@ -238,7 +241,7 @@ https://github.com/webosbrew/dev-manager-desktop
 
 # HyperHDR version:
 
-![1](https://github.com/user-attachments/assets/d327c478-9006-4ba4-aa87-7d493aeb9632)
+<img width="1890" height="849" alt="HyperHDR Qt Version     6" src="https://github.com/user-attachments/assets/8de25f4c-555e-47a6-9090-42418c64fdb9" />
 
 <img width="1895" height="808" alt="version" src="https://github.com/user-attachments/assets/47ab764d-7c25-4e0a-a33f-227364937287" />
 

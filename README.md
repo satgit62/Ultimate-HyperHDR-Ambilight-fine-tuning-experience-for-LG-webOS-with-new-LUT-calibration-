@@ -55,12 +55,15 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
+# UPDATE from 06/09/2025:
+
 * The Hue lamp HyperHDR driver has been significantly rewritten. Protection against inaccuracies when calculating very dark colors has been added to the algorithms.
 * "Candy gamma" is now permanently enabled, as it should be.
 * A bug in the wizard has been potentially fixed:Hue setup doesn't let me click "Save"
 * Processing (the entire color calibration pipeline) was previously disabled for colors and effects; it is now disabled only for colors.
 * Processing: Added the "Scale color output" option (multiplies colors by a user-specified factor).
 * Processing: Added the "Limit power output" option. This works a bit like scaling, but dynamically when a given frame exceeds a specified limit. Please do not confuse this with a power limiter for your power supply, where you can set a specific value in watts. We use an abstract 0-1 scale, not watts, and it only regulates the maximum brightness of scenes.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Infinite Color Engine
 * New Smoothing Algorithms
 * Full support for ftdi and libftdi

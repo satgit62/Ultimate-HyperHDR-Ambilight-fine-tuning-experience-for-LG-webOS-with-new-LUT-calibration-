@@ -53,8 +53,14 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Fix HyperHDR daemon when starting calibration process by @satgit62
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
-The following features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
+# The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
+* The Hue lamp HyperHDR driver has been significantly rewritten. Protection against inaccuracies when calculating very dark colors has been added to the algorithms.
+* "Candy gamma" is now permanently enabled, as it should be.
+* A bug in the wizard has been potentially fixed:Hue setup doesn't let me click "Save"
+* Processing (the entire color calibration pipeline) was previously disabled for colors and effects; it is now disabled only for colors.
+* Processing: Added the "Scale color output" option (multiplies colors by a user-specified factor).
+* Processing: Added the "Limit power output" option. This works a bit like scaling, but dynamically when a given frame exceeds a specified limit. Please do not confuse this with a power limiter for your power supply, where you can set a specific value in watts. We use an abstract 0-1 scale, not watts, and it only regulates the maximum brightness of scenes.
 * Infinite Color Engine
 * New Smoothing Algorithms
 * Full support for ftdi and libftdi
@@ -71,9 +77,6 @@ The following features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 * Corrected calibration for 1280×720 recording settings by @awawa-dev
 
 # UPDATE from 16/02/2025: 
-
-UPDATE from 16/02/2025: 
-
 Version 0.5.1 of PicCap with the new NV12 backends  has been released. YUV422 to NV12 conversion has been added. 
 
 # To avoid errors, please do not use any other version!

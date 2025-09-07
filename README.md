@@ -55,8 +55,9 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
-# UPDATE from 06/09/2025:
+# UPDATE from 07/09/2025:
 
+* Infinite Color Engine: perform smoothing after post-processing
 * The Hue lamp HyperHDR driver has been significantly rewritten. Protection against inaccuracies when calculating very dark colors has been added to the algorithms.
 * "Candy gamma" is now permanently enabled, as it should be.
 * A bug in the wizard has been potentially fixed:Hue setup doesn't let me click "Save"

@@ -55,8 +55,10 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
-# UPDATE from 08/09/2025:
+# UPDATE from 10/09/2025:
 
+* Fix Philips Hue Handshake timeout (OpenSSL1.1)
+* Infinite Color Engine: add new Exponential smoothing
 * Infinite Color Engine: add smoothing test procedure
 * Infinite Color Engine: perform smoothing after post-processing
 * The Hue lamp HyperHDR driver has been significantly rewritten. Protection against inaccuracies when calculating very dark colors has been added to the algorithms.
@@ -110,7 +112,7 @@ How to install .ipk files without Homebrew Channel can be found in my other guid
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.0_all.ipk
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.1_all.ipk
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
@@ -239,7 +241,7 @@ Adjust the temperature according to your LED type.
 
 # Source:
 
-Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.0_all.ipk
+Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.1_all.ipk
 
 Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
 

@@ -2,11 +2,14 @@
 
 # Attention!
 
-This guide is not part of the official HyperHDR for WebOS from the homebrew channel and should not be followed unless you are willing to try something different from what is provided in the homebrew channel and get the maximum colour rendering from different LUTs. 
-Everything here is experimental and constantly being tweaked as @awawa-dev makes changes.
-There is no guarantee that the colour reproduction will be equally good on all devices.
-You may need to make adjustments yourself or even calibrate your external playback source. 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This guide is not part of the official HyperHDR for WebOS from the Homebrew Channel and should only be followed if you are willing to try something different from what is offered in the Homebrew Channel and achieve maximum color reproduction from different LUTs.
+
+Everything here is experimental and constantly being optimized.
+There is no guarantee that color reproduction will be equally good on all devices.
+
+You may need to make adjustments yourself or even calibrate your external display source. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Note
 Since some inexperienced users recently found this guide too complicated and also encountered errors when running it, I decided to simplify it so that everyone can run it.
 
@@ -57,6 +60,8 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # UPDATE from 10/09/2025:
 
+* Infinite Color Engine: add smoothingFactor to YuvInterpolator
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix Philips Hue Handshake timeout (OpenSSL1.1)
 * Infinite Color Engine: add new Exponential smoothing
 * Infinite Color Engine: add smoothing test procedure
@@ -67,7 +72,6 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Processing (the entire color calibration pipeline) was previously disabled for colors and effects; it is now disabled only for colors.
 * Processing: Added the "Scale color output" option (multiplies colors by a user-specified factor).
 * Processing: Added the "Limit power output" option. This works a bit like scaling, but dynamically when a given frame exceeds a specified limit. Please do not confuse this with a power limiter for your power supply, where you can set a specific value in watts. We use an abstract 0-1 scale, not watts, and it only regulates the maximum brightness of scenes.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Infinite Color Engine
 * New Smoothing Algorithms
 * Full support for ftdi and libftdi

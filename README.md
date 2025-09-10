@@ -118,7 +118,7 @@ To avoid errors, please uninstall HyperHDR webos-loader if you have installed a 
 
 * a. Start HyperHDR app and stop the services/daemon.
 * b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
-* c. Install the new webos HyperHDR loader (org.webosbrew.hyperhdr.loader_0.2.7_all.ipk).
+* c. Install the new webos HyperHDR loader.
 * d. Start the HyperHDR application and go to the settings in the top right corner. (gear wheel) See image.
   
 <img width="1445" height="817" alt="HyperHDR Loader" src="https://github.com/user-attachments/assets/dcccaabb-1c42-40a5-95a8-86bf09318b77" />

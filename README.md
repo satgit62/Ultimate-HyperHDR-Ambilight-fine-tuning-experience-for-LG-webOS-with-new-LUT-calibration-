@@ -251,8 +251,7 @@ https://github.com/webosbrew/dev-manager-desktop
 
 # HyperHDR version:
 
-<img width="1890" height="849" alt="HyperHDR Qt Version     6" src="https://github.com/user-attachments/assets/8de25f4c-555e-47a6-9090-42418c64fdb9" />
-
+<img width="1623" height="770" alt="OpenSSL 1 1 1q" src="https://github.com/user-attachments/assets/ee0d7d45-7287-45b2-828a-1cbdcd21352b" />
 
 # NV12 Mode Log:
 

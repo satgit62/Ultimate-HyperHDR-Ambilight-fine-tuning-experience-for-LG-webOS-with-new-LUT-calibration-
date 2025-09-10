@@ -7,7 +7,7 @@ This guide is not part of the official HyperHDR for WebOS from the Homebrew Chan
 Everything here is experimental and constantly being optimized.
 There is no guarantee that color reproduction will be equally good on all devices.
 
-You may need to make adjustments yourself or even calibrate your external display source. 
+You may need to make adjustments yourself or even calibrate your external display source.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Note

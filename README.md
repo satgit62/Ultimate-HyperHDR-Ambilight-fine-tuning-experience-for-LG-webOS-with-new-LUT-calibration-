@@ -178,6 +178,24 @@ The most common resolutions for PicCap are:
 
 # Note: It has been reported that the LG option “Instant Game Response” prevents the correct LUT from being loaded.
 
+
+# New Infinite Color
+
+The new “Infinite Color” branch contains innovative smoothing algorithms, so there is something for every user to smooth the transitions between color changes. Image processing has also changed since then.
+
+<img width="1896" height="1078" alt="3 Smoothing" src="https://github.com/user-attachments/assets/d26b01e6-ae44-428c-81ee-94e1af1e7d81" />
+
+<img width="1046" height="933" alt="New smoothing algoritmus" src="https://github.com/user-attachments/assets/b0e4772e-94ae-4cde-859c-f39a598e411b" />
+
+<img width="1894" height="1064" alt="Image Processing" src="https://github.com/user-attachments/assets/8a726263-ffb9-46e0-b0e2-a97589e963c7" />
+
+Since some users have asked how these new smoothing parameters (stiffness, damping) affect hybrid interpolation, interested parties can practice and visualize this in “myPhisicLab.” See:https://www.myphysicslab.com/springs/single-spring-en.html
+
+<img width="1916" height="1079" alt="1" src="https://github.com/user-attachments/assets/d3ecb929-e521-49f5-9def-5fc73f498f67" />
+
+<img width="1919" height="876" alt="2" src="https://github.com/user-attachments/assets/e8cccd25-450b-4842-a0c9-37d72bfced25" />
+
+
 # LUT 
 
 If you decide to calibrate the LUTs yourself, make sure you set the resolution in PicCap/Hyperion Webos to at least 1280x720, better 1920x1080, save and restart.

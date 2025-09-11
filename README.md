@@ -60,7 +60,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # UPDATE from 10/09/2025:
 
-* Infinite Color Engine: add smoothingFactor to YuvInterpolator
+* Infinite Color Engine: add smoothingFactor to YUV Infinite Interpolator
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix Philips Hue Handshake timeout (OpenSSL1.1)
 * Infinite Color Engine: add new Exponential smoothing

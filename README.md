@@ -60,6 +60,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # Here is an update from September 12, 2025:
 
+* Infinite Color Engine: add additional checks
 * Infinite Color Engine: fix memory leak
 * Infinite Color Engine: Hide automatic_tone_mapping in processing if built w/o grabbers
 * If the USB grabber is disabled from the build: do not create the LUT if it is not found

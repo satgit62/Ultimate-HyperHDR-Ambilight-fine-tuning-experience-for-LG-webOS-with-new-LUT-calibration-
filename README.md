@@ -58,8 +58,9 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
-# Here is an update from September 12, 2025:
+# Here is an update from September 17, 2025:
 
+* Infinite Color Engine: stronger YUV target achievement detection limit (3)
 * Infinite Color Engine: add additional checks
 * Infinite Color Engine: fix memory leak
 * Infinite Color Engine: Hide automatic_tone_mapping in processing if built w/o grabbers

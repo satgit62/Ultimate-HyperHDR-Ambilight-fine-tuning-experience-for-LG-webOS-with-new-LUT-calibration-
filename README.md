@@ -123,7 +123,7 @@ How to install .ipk files without Homebrew Channel can be found in my other guid
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.2_all.ipk
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.2_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

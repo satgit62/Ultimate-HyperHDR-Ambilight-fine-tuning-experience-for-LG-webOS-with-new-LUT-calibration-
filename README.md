@@ -58,8 +58,10 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
-# Here is an update from September 26, 2025:
+# Here is an update from Oct 8, 2025:
 
+* Infinite Color Engine: fix for YUV & hybrid interpolators
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix HA wizard timeout message
 * Infinite Color Engine: stronger YUV target achievement detection limit (3)
 * Infinite Color Engine: add additional checks
@@ -68,7 +70,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * If the USB grabber is disabled from the build: do not create the LUT if it is not found
 * The flat_lut_lin_tables.3d file is only searched in the home folder
 * Remove the video grabber and system capture component from the user interface (overview, remote) if they are not included in the build
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Infinite Color Engine: add smoothingFactor to YUV Infinite Interpolator
 * Fix Philips Hue Handshake timeout (OpenSSL1.1)
 * Infinite Color Engine: add new Exponential smoothing
@@ -124,7 +126,7 @@ How to install .ipk files without Homebrew Channel can be found in my other guid
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.2_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.3_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

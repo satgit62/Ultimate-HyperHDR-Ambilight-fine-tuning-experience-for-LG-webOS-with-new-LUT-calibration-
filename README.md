@@ -60,6 +60,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # Here is an update from Oct 8, 2025:
 
+* Backward compatibility with older Hue setups
 * Infinite Color Engine: fix for YUV & hybrid interpolators
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix HA wizard timeout message

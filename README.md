@@ -217,6 +217,8 @@ The new “Infinite Color” branch contains innovative smoothing algorithms, so
 
 <img width="1896" height="1078" alt="3 Smoothing" src="https://github.com/user-attachments/assets/d26b01e6-ae44-428c-81ee-94e1af1e7d81" />
 
+<img width="1831" height="1072" alt="3" src="https://github.com/user-attachments/assets/e3d43c15-e8bd-4111-afc3-627d7405ba75" />
+
 <img width="1046" height="933" alt="New smoothing algoritmus" src="https://github.com/user-attachments/assets/b0e4772e-94ae-4cde-859c-f39a598e411b" />
 
 <img width="1894" height="1064" alt="Image Processing" src="https://github.com/user-attachments/assets/8a726263-ffb9-46e0-b0e2-a97589e963c7" />

@@ -125,6 +125,23 @@ Since HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to 
 
 How to install .ipk files without Homebrew Channel can be found in my other guide. See: https://github.com/satgit62/How-to-Install-and-set-up-Ambilight-on-LG-webOS#manual-installation-of-apps-without-homebrew-channel.
 
+# HyperHDR UPDATE instructions:
+There are no instructions for updating HyperHDR or Hyperion.NG from the Homebrew Channel, as all you need to do is click on “Update” and the process will run automatically.
+
+If you want to update one of my versions outside of the Homebrew Channel, you must first uninstall the application using the webOS Dev Manager or the App Browser.
+Only then can you install the new “org.webosbrew.hyperhdr.loader_0.x.x_all.ipk” without any concerns.
+
+Your settings will generally remain intact, as they are stored in a separate directory `/home/root/.hyperhdr/db/hyperhdr.db` and will therefore not be overwritten.
+The compressed LUTs are also installed in the directory `/home/root/.hyperhdr/` above the loader menu.
+
+Attention! 
+If you have installed uncompressed LUT tables from an earlier version that you calibrated yourself and that did not originate from me, you should first create a backup of the LUTs from the directory `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/`. If necessary, you will need to replace the uncompressed LUTs that you installed via the Loader menu with those from the backup. This is because installing via the Loader menu also creates the correct symlinks to the home directory.
+
+In principle, the compressed LUTs are sufficient, as they are decompressed in real time and have the same quality as the uncompressed LUTs. Decompression takes less than a second and only needs to be done once, as the LUTs are stored in the `/tmp/` directory and are immediately available when needed.
+
+In addition, only a small fraction of the flash memory is used, leaving enough memory for other applications.
+
+
 # To avoid errors, Please use only this version for these instructions:
 
 https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.3_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)

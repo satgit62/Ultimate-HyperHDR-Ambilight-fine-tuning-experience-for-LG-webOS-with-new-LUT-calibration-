@@ -7,8 +7,9 @@ This guide is not part of the official HyperHDR for WebOS from the Homebrew Chan
 Everything here is experimental and constantly being optimized.
 There is no guarantee that color reproduction will be equally good on all devices.
 
-You may need to make adjustments yourself or even calibrate your external display source.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The LUTs that I have calibrated and which you can install using the LUT loader are not a benchmark; they simply enable you to use them immediately.
+However, depending on your TV's system on a chip (SoC), you may need to adjust them yourself or even recalibrate your display source (internal or external) in order to generate suitable LUTs for the content being played and replace the installed ones.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Note
 Since some inexperienced users recently found this guide too complicated and also encountered errors when running it, I decided to simplify it so that everyone can run it.
@@ -17,7 +18,7 @@ With the changes in the PicCap UI, the additional code from @neogeo for the Hype
 
 This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos, @neogeo Add Settings Panel with LUT installation selector option in Settings menu of hyperhdr-webos-loader and Add NV12 to PicCap-UI by @TBSniller & @satgit62.
 
-PiCap v0.5.1 and HyperHDR 21.0.0.0 (org.webosbrew.hyperhdr.loader_0.2.5_all.ipk) are required to use this guide.
+PiCap v0.5.1 and HyperHDR 21.0.0.0 are required to use this guide.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 

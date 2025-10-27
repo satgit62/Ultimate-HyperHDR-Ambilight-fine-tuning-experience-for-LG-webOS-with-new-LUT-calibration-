@@ -247,7 +247,14 @@ Comment: Enabling 'Quarter of image for NV12' will reduce the CPU load, but the 
 # Note on calibration videos:
 SDR refers to content without HDR/HLG or Dolby Vision. For this, you also have to use a calibration video such as calibration_HDR_yuv420_limited_range.mp4, calibration_SDR_yuv420_limited_range.mp4, for_testing_after_calibration_HDR_yuv420_limited_range.mp4
 
-For DV calibration, use the `test_DV_yuv420_low_quality.mp4` file. See above in Main 
+Unfortunately, there are currently no official calibration videos available for Dolby Vision. Due to the variety of DOVI profiles, it is virtually impossible to implement this in a single video file. The only video that can be used is the HDR calibration video 'test_DV_yuv420_low_quality.mp4', which contains Dolby Vision video metadata. (Codec: Dolby Vision HEVC (H.265) (DVHEV). This may not correspond to reality.
+
+<img width="1580" height="847" alt="Codec Dolby Vision HEVEC (H 265) (dvhe)" src="https://github.com/user-attachments/assets/8e99e233-d9ff-43ff-ae1d-91bf91979943" />
+
+# Note:
+
+This file cannot be easily calibrated on the LG device using the onboard tools.
+Therefore, calibration should be performed on a more powerful system, such as Windows or a Raspberry Pi 5, and an adequate external grabber should be used if possible.
 
 So take the appropriate videos for the desired LUT calibration.
 

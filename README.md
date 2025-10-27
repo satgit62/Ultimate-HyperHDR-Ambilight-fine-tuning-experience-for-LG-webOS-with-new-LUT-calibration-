@@ -301,10 +301,6 @@ Adjust the temperature according to your LED type.
 
 # Source:
 
-Download org.webosbrew.hyperhdr.loader: https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.2_all.ipk
-
-Download three test LUT tables for SDR, HDR+ and DV are available for download at the following link: https://drive.google.com/file/d/1gMcooXS14cIQcl5wXywo37i1imaBJGjW/view?usp=sharing
-
 Download Video calibration test files: https://github.com/awawa-dev/awawa-dev.github.io/tree/master/calibration
 
 https://github.com/webosbrew/dev-manager-desktop

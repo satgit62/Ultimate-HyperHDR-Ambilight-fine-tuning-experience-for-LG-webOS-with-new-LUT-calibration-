@@ -266,8 +266,7 @@ LUT_calibration_1:
 
 LUT_calibration_2:
 
-![LUT_calibration1](https://github.com/user-attachments/assets/97cddfb5-4627-4b61-a29a-fabfa96e6b06)
-
+<img width="1489" height="1056" alt="Kalibrierung" src="https://github.com/user-attachments/assets/bf4761e2-68ad-425f-b8e3-86d7f8413573" />
 
 # Important!
 At the end of calibration, the LUT is automatically saved in `/home/root/.hyperhdr/` under the name lut_lin_tables.3d.

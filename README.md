@@ -59,8 +59,11 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
 
-# Here is an update from December 7, 2025:
+# Here is an update from December 19, 2025:
 
+* Significant speedup for YUV/NV12/P010 and related codecs (https://github.com/awawa-dev/HyperHDR/pull/1374)
+To prevent dropouts, please activate the 'Continuous Output' option in the 'Smoothing' menu.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix RGBCMYK calibration (https://github.com/awawa-dev/HyperHDR/pull/1369)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Backward compatibility with older Hue setups
@@ -147,7 +150,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.4_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.5_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

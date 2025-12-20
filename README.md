@@ -62,6 +62,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 # Here is an update from December 19, 2025:
 
 * Significant speedup for YUV/NV12/P010 and related codecs (https://github.com/awawa-dev/HyperHDR/pull/1374)
+
 To prevent dropouts, please activate the 'Continuous Output' option in the 'Smoothing' menu.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix RGBCMYK calibration (https://github.com/awawa-dev/HyperHDR/pull/1369)

@@ -14,11 +14,11 @@ However, depending on your TV's system on a chip (SoC), you may need to adjust t
 # Note
 Since some inexperienced users recently found this guide too complicated and also encountered errors when running it, I decided to simplify it so that everyone can run it.
 
-With the changes in the PicCap UI, the additional code from @neogeo for the HyperHDR installer and the countless tips from @awawa-dev, I was finally able to put together a new HyperHDR version that simplifies everything.
+With the changes in the PicCap UI, the additional code from @neogeo for the HyperHDR LUT-Installer and the countless tips from @awawa-dev, I was finally able to put together a new HyperHDR version that simplifies everything.
 
-This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos, @neogeo Add Settings Panel with LUT installation selector option in Settings menu of hyperhdr-webos-loader and Add NV12 to PicCap-UI by @TBSniller & @satgit62.
+This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos and Add NV12 to PicCap-UI by @TBSniller & @satgit62.
 
-PiCap v0.5.1 and HyperHDR 21.0.0.0 are required to use this guide.
+PiCap v0.5.1 and HyperHDR 21.0.0.0 are required to use this guide. For HyperHDR-Infinite Color Engine, you need 22.0.0beta0 by @awawa-dev.
 
 The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
 

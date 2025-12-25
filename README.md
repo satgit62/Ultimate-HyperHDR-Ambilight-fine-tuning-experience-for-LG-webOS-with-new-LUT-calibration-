@@ -57,18 +57,15 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Fix HyperHDR daemon when starting calibration process by @satgit62
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
-# The following new features have been added to HyperHDR 22.0.0beta0 by @awawa-dev:
+# The following new features have been added to HyperHDR-Infinite Color Engine 22.0.0beta0 by @awawa-dev:
 
 Here is an update from December 25, 2025:
 * Fix rendering w/o continuous output (https://github.com/awawa-dev/HyperHDR/pull/1377)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Significant speedup for YUV/NV12/P010 and related codecs (https://github.com/awawa-dev/HyperHDR/pull/1377)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix RGBCMYK calibration (https://github.com/awawa-dev/HyperHDR/pull/1369)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Backward compatibility with older Hue setups
 * Infinite Color Engine: fix for YUV & hybrid interpolators
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix HA wizard timeout message
 * Infinite Color Engine: stronger YUV target achievement detection limit (3)
 * Infinite Color Engine: add additional checks

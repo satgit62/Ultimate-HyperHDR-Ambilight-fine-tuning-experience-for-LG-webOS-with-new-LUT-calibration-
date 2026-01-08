@@ -57,11 +57,14 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Fix HyperHDR daemon when starting calibration process by @satgit62
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
-# The following new features have been added to HyperHDR-Infinite Color Engine 22.0.0beta0 by @awawa-dev:
+# HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from December 25, 2025:
-* Fix rendering w/o continuous output (https://github.com/awawa-dev/HyperHDR/pull/1377)
+Here is an update from January 8, 2026:
+
+* Philips Hue driver: add option for linear or nonlinear RGB color output
+* Smoothing: add Hybrid Physics Infinite Interpolator (RGB) & Hybrid Physics Infinite Interpolator (YUV)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Fix rendering w/o continuous output (https://github.com/awawa-dev/HyperHDR/pull/1377)
 * Significant speedup for YUV/NV12/P010 and related codecs (https://github.com/awawa-dev/HyperHDR/pull/1377)
 * Fix RGBCMYK calibration (https://github.com/awawa-dev/HyperHDR/pull/1369)
 * Backward compatibility with older Hue setups
@@ -147,7 +150,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.5_all.ipk (This corresponds to the latest HyperHDR version 22.0.0beta0-Infinite Color Engine)
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_all.ipk (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
@@ -225,6 +228,11 @@ The new “Infinite Color” branch contains innovative smoothing algorithms, so
 <img width="1046" height="933" alt="New smoothing algoritmus" src="https://github.com/user-attachments/assets/b0e4772e-94ae-4cde-859c-f39a598e411b" />
 
 <img width="1894" height="1064" alt="Image Processing" src="https://github.com/user-attachments/assets/8a726263-ffb9-46e0-b0e2-a97589e963c7" />
+
+# New smoothing algorithms:
+Hybrid Physics Infinite Interpolator (RGB) & Hybrid Physics Infinite Interpolator (YUV)
+
+<img width="723" height="807" alt="Hybrid Physics Infinite Interpolator (RGB)" src="https://github.com/user-attachments/assets/6a6f2522-69cb-4198-ac11-4de98bd17889" />
 
 Since some users have asked how these new smoothing parameters (stiffness, damping) affect hybrid interpolation, interested parties can practice and visualize this in “myPhisicLab.” See:https://www.myphysicslab.com/springs/single-spring-en.html
 

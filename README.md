@@ -244,12 +244,12 @@ New smoothing algorithms:
 
 <img width="1046" height="933" alt="New smoothing algoritmus" src="https://github.com/user-attachments/assets/b0e4772e-94ae-4cde-859c-f39a598e411b" />
 
-<img width="1894" height="1064" alt="Image Processing" src="https://github.com/user-attachments/assets/8a726263-ffb9-46e0-b0e2-a97589e963c7" />
+<img width="1831" height="1078" alt="Smoothing" src="https://github.com/user-attachments/assets/bb4e9dcc-26ea-4db9-b56f-81e3e96f8608" />
 
-# New smoothing algorithms:
-Hybrid Physics Infinite Interpolator (RGB) & Hybrid Physics Infinite Interpolator (YUV)
+# Image Procesing-Infinit Color Engine:
+<img width="1847" height="1079" alt="Image Processing-Infinit Color Engine" src="https://github.com/user-attachments/assets/a12be97a-8342-42f9-a071-ef7dc770edf0" />
 
-<img width="723" height="807" alt="Hybrid Physics Infinite Interpolator (RGB)" src="https://github.com/user-attachments/assets/6a6f2522-69cb-4198-ac11-4de98bd17889" />
+<img width="1128" height="1068" alt="Infinite Color Engine" src="https://github.com/user-attachments/assets/5f8cfeae-3ecc-4b03-a87e-81cbc5e1bc8d" />
 
 Since some users have asked how these new smoothing parameters (stiffness, damping) affect hybrid interpolation, interested parties can practice and visualize this in “myPhisicLab.” See:https://www.myphysicslab.com/springs/single-spring-en.html
 

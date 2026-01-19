@@ -316,23 +316,23 @@ https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 If you would like to compress your self-calibrated LUTs, please read the following instructions:: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
 
 
-# HyperHDR Image Processing
+# HyperHDR Image Processing - Live calibration
 
 Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or saturation under Image Processing using calibrated colour templates. Colour templates are located at the top of Main.
 
-You must make the fine adjustments under Remote Control Live Calibration and if the results are good, then you must enter and save the values in HyperHDR under Image Processing.
+You must play the templates in a color that is not 100% accurate. Then go to the “Live Calibration” submenu in the “Remote Control” menu and adjust the values until the LEDs display the color accurately.
+The best calibration is achieved by selecting the “Color Pipette/Color Picker” option in the browser menu, placing the magnifying glass over the image, and reading the hexadecimal value. In my example, the hexadecimal value Yellow rgb(255, 255, 0) corresponds to the value #FFFF00.
+If you are happy with the results, enter and save the values in the 'Image Processing' menu in HyperHDR.
 
-# Live calibration
+<img width="1473" height="881" alt="Live calibration" src="https://github.com/user-attachments/assets/36843908-e7d2-4c6d-8fa6-4a624d39c926" />
 
-<img width="1804" height="852" alt="Live calibration" src="https://github.com/user-attachments/assets/14258954-3ea5-475e-8c88-3f690dcb056c" />
+<img width="1671" height="777" alt="Live Calibration1" src="https://github.com/user-attachments/assets/046afb2a-f16d-48bb-bf3d-65abc4f66ae5" />
 
+<img width="1478" height="827" alt="Live calibration Color picker" src="https://github.com/user-attachments/assets/c54686b5-0c68-47c9-8fa5-d8da874e7928" />
 
-# Image Processing
+<img width="411" height="789" alt="RGB to Hex color table" src="https://github.com/user-attachments/assets/d96366dd-6bc7-4964-8718-de718aa0e424" />
 
-If the colors are not intense enough, increase the saturation. Increase or decrease the gamma values gradually until the desired effect is achieved.
-Adjust the temperature according to your LED type.
-
-<img width="1912" height="1059" alt="Infinite Color Engine1" src="https://github.com/user-attachments/assets/8c9bfc5f-6eea-46da-87fe-ab7d9e008b47" />
+Color table converter:https://www.rapidtables.com/convert/color/rgb-to-hex.html
 
 
 # Source:
@@ -343,7 +343,8 @@ https://github.com/webosbrew/dev-manager-desktop
 
 # HyperHDR version:
 
-<img width="1623" height="770" alt="OpenSSL 1 1 1q" src="https://github.com/user-attachments/assets/ee0d7d45-7287-45b2-828a-1cbdcd21352b" />
+<img width="1129" height="725" alt="HyperHDR Version" src="https://github.com/user-attachments/assets/6793a1f0-6da6-452d-a807-c7e7c20143df" />
+
 
 # NV12 Mode Log:
 

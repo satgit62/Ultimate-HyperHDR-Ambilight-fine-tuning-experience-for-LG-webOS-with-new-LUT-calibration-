@@ -256,8 +256,8 @@ If the LEDs go out when displaying black, set the minimum backlight level to 0.
 
 <img width="1847" height="1079" alt="Image Processing-Infinit Color Engine" src="https://github.com/user-attachments/assets/a12be97a-8342-42f9-a071-ef7dc770edf0" />
 
+<img width="1831" height="811" alt="Temperature" src="https://github.com/user-attachments/assets/cbc57c38-e813-4fdd-a66f-85ee731f3961" />
 
-<img width="1128" height="1068" alt="Infinite Color Engine" src="https://github.com/user-attachments/assets/5f8cfeae-3ecc-4b03-a87e-81cbc5e1bc8d" />
 
 # Interpolation examples:
 Since some users have asked how these new smoothing parameters (stiffness, damping) affect hybrid interpolation, interested parties can practice and visualize this in “myPhisicLab.” See:https://www.myphysicslab.com/springs/single-spring-en.html

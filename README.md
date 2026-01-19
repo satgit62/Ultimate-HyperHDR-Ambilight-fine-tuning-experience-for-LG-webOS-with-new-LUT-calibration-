@@ -243,7 +243,7 @@ The smoothing functions are particularly excellent. They enable a smooth transit
 
 New smoothing algorithms:
 
-<img width="1046" height="933" alt="New smoothing algoritmus" src="https://github.com/user-attachments/assets/b0e4772e-94ae-4cde-859c-f39a598e411b" />
+<img width="1126" height="1067" alt="New smoothing algorithmus" src="https://github.com/user-attachments/assets/dbebb277-b8d9-4cc8-916f-4006df0b30f7" />
 
 <img width="1831" height="1078" alt="Smoothing" src="https://github.com/user-attachments/assets/bb4e9dcc-26ea-4db9-b56f-81e3e96f8608" />
 

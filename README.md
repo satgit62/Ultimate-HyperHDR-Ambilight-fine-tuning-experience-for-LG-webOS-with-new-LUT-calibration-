@@ -241,7 +241,6 @@ The switch to floating point has drastically minimized this problem.
 
 The smoothing functions are particularly excellent. They enable a smooth transition to the next scene in any type of setup, providing the same calmness familiar from the Philips Ambilight system.
 
-New smoothing algorithms:
 
 <img width="1126" height="1067" alt="New smoothing algorithmus" src="https://github.com/user-attachments/assets/dbebb277-b8d9-4cc8-916f-4006df0b30f7" />
 

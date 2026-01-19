@@ -318,7 +318,7 @@ If you would like to compress your self-calibrated LUTs, please read the followi
 
 # HyperHDR Image Processing - Live calibration
 
-Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or saturation under Image Processing using calibrated colour templates. Colour templates are located at the top of Main.
+Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or saturation under Image Processing using calibrated colour templates. You can download the colour templates from the top of the main page.
 
 You must play the templates in a color that is not 100% accurate. Then go to the “Live Calibration” submenu in the “Remote Control” menu and adjust the values until the LEDs display the color accurately.
 The best calibration is achieved by selecting the “Color Pipette/Color Picker” option in the browser menu, placing the magnifying glass over the image, and reading the hexadecimal value. In my example, the hexadecimal value Yellow rgb(255, 255, 0) corresponds to the value #FFFF00.

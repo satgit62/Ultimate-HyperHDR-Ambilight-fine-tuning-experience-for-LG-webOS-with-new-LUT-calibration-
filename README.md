@@ -18,9 +18,9 @@ With the changes in the PicCap UI, the additional code from @neogeo for the Hype
 
 This guide is based on @awawa-dev NV12 implementation and new LUT calibration method in HyperHDR, @sundermann NV12 customisation in hyperion-webos and Add NV12 to PicCap-UI by @TBSniller & @satgit62.
 
-PiCap v0.5.1 and HyperHDR 21.0.0.0 are required to use this guide. For HyperHDR-Infinite Color Engine, you need 22.0.0beta0 by @awawa-dev.
+To use this guide, you will need PiCap v0.5.1 or higher and HyperHDR v21.0.0.0 or higher. To use HyperHDR with the Infinite Color Engine, you will need version v22.0.0beta0 or higher (v22.0.0beta1) from @awawa-dev.
 
-The implementation and utilization of the NV12 image format in HyperHDR now offers numerous enhancements and the capability to achieve precise color matching even in our exotic LG webOS by utilizing the YUV format in lieu of RGB.
+HyperHDR's implementation of the NV12 image format now offers numerous improvements and the ability to achieve precise colour matching, even on our LG webOS, by using the YUV format instead of RGB.
 
 # Advantages:
 

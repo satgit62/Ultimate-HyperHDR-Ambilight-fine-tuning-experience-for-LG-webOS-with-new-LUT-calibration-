@@ -316,7 +316,7 @@ https://github.com/awawa-dev/HyperHDR/wiki/lut-calibration
 If you would like to compress your self-calibrated LUTs, please read the following instructions:: https://github.com/satgit62/How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
 
 
-# HyperHDR Image Processing - Live calibration
+# HyperHDR Image Processing - RGBCMYK Live calibration
 
 Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or saturation under Image Processing using calibrated colour templates. You can download the colour templates from the top of the main page.
 

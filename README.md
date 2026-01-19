@@ -59,11 +59,12 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from January 8, 2026:
+Here is an update from January 19, 2026:
 
+* Update iconColor in appinfo.json for webOS 25 compatibility
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Philips Hue driver: add option for linear or nonlinear RGB color output
 * Smoothing: add Hybrid Physics Infinite Interpolator (RGB) & Hybrid Physics Infinite Interpolator (YUV)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix rendering w/o continuous output (https://github.com/awawa-dev/HyperHDR/pull/1377)
 * Significant speedup for YUV/NV12/P010 and related codecs (https://github.com/awawa-dev/HyperHDR/pull/1377)
 * Fix RGBCMYK calibration (https://github.com/awawa-dev/HyperHDR/pull/1369)

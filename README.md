@@ -247,10 +247,19 @@ New smoothing algorithms:
 <img width="1831" height="1078" alt="Smoothing" src="https://github.com/user-attachments/assets/bb4e9dcc-26ea-4db9-b56f-81e3e96f8608" />
 
 # Image Procesing-Infinit Color Engine:
+
+Here you can adjust color accuracy (RGBCMYW), brightness/luminance, color saturation, gamma and temperature values, and the minimum backlight level.
+Tip: 
+If the LEDs go out when displaying black, set the minimum backlight level to 0.
+- You should set the color temperature accordingly when using RGBW LEDs (CW, NW, or WW), otherwise set it to “Disable.”
+“Custom” gives you another option to set the temperature for each color component (RGB) more precisely if the other settings do not correspond to reality.
+
 <img width="1847" height="1079" alt="Image Processing-Infinit Color Engine" src="https://github.com/user-attachments/assets/a12be97a-8342-42f9-a071-ef7dc770edf0" />
+
 
 <img width="1128" height="1068" alt="Infinite Color Engine" src="https://github.com/user-attachments/assets/5f8cfeae-3ecc-4b03-a87e-81cbc5e1bc8d" />
 
+# Interpolation examples:
 Since some users have asked how these new smoothing parameters (stiffness, damping) affect hybrid interpolation, interested parties can practice and visualize this in “myPhisicLab.” See:https://www.myphysicslab.com/springs/single-spring-en.html
 
 <img width="1916" height="1079" alt="1" src="https://github.com/user-attachments/assets/d3ecb929-e521-49f5-9def-5fc73f498f67" />

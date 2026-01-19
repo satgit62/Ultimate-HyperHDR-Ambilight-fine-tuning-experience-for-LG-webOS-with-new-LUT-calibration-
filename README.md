@@ -322,7 +322,10 @@ Finally, you can make fine adjustments such as RGB-gamma, RGB-Temperature or sat
 
 You must play the templates in a color that is not 100% accurate. Then go to the “Live Calibration” submenu in the “Remote Control” menu and adjust the values until the LEDs display the color accurately.
 The best calibration is achieved by selecting the “Color Pipette/Color Picker” option in the browser menu, placing the magnifying glass over the image, and reading the hexadecimal value. In my example, the hexadecimal value Yellow rgb(255, 255, 0) corresponds to the value #FFFF00.
-If you are happy with the results, enter and save the values in the 'Image Processing' menu in HyperHDR.
+
+The easiest way to do this is with a desktop web browser on a PC. There you can use the color picker. On a mobile device (smartphone, tablet), you can then change the values and check on the other device whether the correct values have been achieved.
+
+If you are satisfied with the results, make a note of the values and enter them in the “Image Processing” menu of HyperHDR. Finally, save the values.
 
 <img width="1473" height="881" alt="Live calibration" src="https://github.com/user-attachments/assets/36843908-e7d2-4c6d-8fa6-4a624d39c926" />
 

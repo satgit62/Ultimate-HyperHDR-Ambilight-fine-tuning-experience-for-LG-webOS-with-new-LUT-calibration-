@@ -217,13 +217,30 @@ The most common resolutions for PicCap are:
 # Note: It has been reported that the LG option “Instant Game Response” prevents the correct LUT from being loaded.
 
 
-# New Infinite Color
+# Infinite Color Engine:
 
 The new “Infinite Color” branch contains innovative smoothing algorithms, so there is something for every user to smooth the transitions between color changes. Image processing has also changed since then.
 
-<img width="1896" height="1078" alt="3 Smoothing" src="https://github.com/user-attachments/assets/d26b01e6-ae44-428c-81ee-94e1af1e7d81" />
+The name “Infinite” is not just marketing hype.
+The Infinite Color Engine works with a color palette of 1.24 × 10²⁷ possible values.
+For comparison:
+```
+Old 24-bit color: 1.67 × 10⁷ values
+New floating point engine: 1.24 × 10²⁷ values
+```
+As you can see, the difference is huge.
+The use of RGB bulbs/LEDs that support an extended color palette is now supported.
 
-<img width="1831" height="1072" alt="3" src="https://github.com/user-attachments/assets/e3d43c15-e8bd-4111-afc3-627d7405ba75" />
+* There is less banding, noise, and flickering.
+* More stable color transitions between images.
+* In addition, corrections in post-processing are smoother.
+
+If the final averaged color previously happened to fall on the boundary between two integers, even tiny changes in the source could lead to sudden jumps between images.
+The switch to floating point has drastically minimized this problem. 
+
+The smoothing functions are particularly excellent. They enable a smooth transition to the next scene in any type of setup, providing the same calmness familiar from the Philips Ambilight system.
+
+New smoothing algorithms:
 
 <img width="1046" height="933" alt="New smoothing algoritmus" src="https://github.com/user-attachments/assets/b0e4772e-94ae-4cde-859c-f39a598e411b" />
 

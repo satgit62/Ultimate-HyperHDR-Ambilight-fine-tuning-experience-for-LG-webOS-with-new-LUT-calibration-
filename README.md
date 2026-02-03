@@ -59,10 +59,11 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from January 19, 2026:
+Here is an update from February 03, 2026:
 
+* Anti‑flicker filter "Enables an infinite color engine filter that reduces subtle LED flickering caused by 24‑bit RGB color quantization. Controllers that support extended color formats (deep color), such as Philips Hue (in Entertainment mode) or LIFX devices, do not need this filter at all"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 * Update iconColor in appinfo.json for webOS 25 compatibility
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Philips Hue driver: add option for linear or nonlinear RGB color output
 * Smoothing: add Hybrid Physics Infinite Interpolator (RGB) & Hybrid Physics Infinite Interpolator (YUV)
 * Fix rendering w/o continuous output (https://github.com/awawa-dev/HyperHDR/pull/1377)
@@ -151,7 +152,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_all.ipk (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
+https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_fix-for-v22beta1_opensssl3_all.ipk (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

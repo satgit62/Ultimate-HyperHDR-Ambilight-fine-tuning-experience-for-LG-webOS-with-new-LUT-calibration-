@@ -152,7 +152,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_fix-for-v22beta1_opensssl3_all.ipk (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
+HyperHDR Current version download [https://github.com](https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_fix-for-v22beta1_opensssl3_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
@@ -372,4 +372,4 @@ See https://gist.github.com/Jim-Bar/3cbba684a71d1a9d468a6711a6eddbeb#about-yuv-f
 ![NV12 coefficients](https://github.com/user-attachments/assets/bf8ee0b6-81d3-445f-84d2-3b8725b20581)
 
 
-HyperHDR Current version download [https://github.com](https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_fix-for-v22beta1_opensssl3_all.ipk)
+

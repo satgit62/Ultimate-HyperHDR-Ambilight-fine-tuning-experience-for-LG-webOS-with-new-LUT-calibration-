@@ -61,7 +61,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 Here is an update from March 05, 2026:
 
-* A DDP/Hyperk driver for Hyperk LED controllers has been implemented
+* A DDP/Hyperk driver for Hyperk LED controllers has been implemented [hyperk](https://github.com/satgit62/How-to-install-and-set-up-Hyperk-on-ESP-RP-2040-2350)
 * Anti‑flicker filter "Enables an infinite color engine filter that reduces subtle LED flickering caused by 24‑bit RGB color quantization. Controllers that support extended color formats (deep color), such as Philips Hue (in Entertainment mode) or LIFX devices, do not need this filter at all"
 * Update iconColor in appinfo.json for webOS 25 compatibility
 * Philips Hue driver: add option for linear or nonlinear RGB color output

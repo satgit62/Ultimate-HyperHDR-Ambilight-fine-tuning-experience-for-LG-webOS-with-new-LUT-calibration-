@@ -59,8 +59,10 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from March 05, 2026:
+Here is an update from March 12, 2026:
 
+* Fixed: LUT loader (curl: (60) SSL certificate issue)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------  
 * A DDP/Hyperk driver for Hyperk LED controllers has been implemented [hyperk](https://github.com/satgit62/How-to-install-and-set-up-Hyperk-on-ESP-RP-2040-2350)
 * Anti‑flicker filter "Enables an infinite color engine filter that reduces subtle LED flickering caused by 24‑bit RGB color quantization. Controllers that support extended color formats (deep color), such as Philips Hue (in Entertainment mode) or LIFX devices, do not need this filter at all"
 * Update iconColor in appinfo.json for webOS 25 compatibility
@@ -152,7 +154,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-HyperHDR Current version download [https://github.com](https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_hyperk_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
+HyperHDR Current version download [https://github.com](https://github.com/satgit62/satgit62.github.io/releases/download/v0.2.0-alpha/org.webosbrew.hyperhdr.loader_0.3.6_ssl3_hyperk_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

@@ -61,6 +61,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 Here is an update from March 12, 2026:
 
+* The Philips WiZ driver, including the Philips WiZ Wizard, has been integrated into HyperHDR
 * Fixed: LUT loader (curl: (60) SSL certificate issue)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------  
 * A DDP/Hyperk driver for Hyperk LED controllers has been implemented [hyperk](https://github.com/satgit62/How-to-install-and-set-up-Hyperk-on-ESP-RP-2040-2350)

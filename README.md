@@ -61,7 +61,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 Here is an update from March 20, 2026:
 
-* RGBW with Temporal Dithering powered by ICE (#1483), has been implemented
+* RGBW with Temporal Dithering powered by [ICE](https://github.com/awawa-dev/HyperHDR/pull/1483), has been implemented
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 * The Philips WiZ driver, including the Philips WiZ Wizard, has been integrated into HyperHDR
 * Fixed: LUT loader (curl: (60) SSL certificate issue)

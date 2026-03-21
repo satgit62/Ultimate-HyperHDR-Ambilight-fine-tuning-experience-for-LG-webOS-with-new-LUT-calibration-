@@ -159,6 +159,17 @@ After you have selected/approved the LUT, wait until Success! appears in the bot
 The uncompressed LUTs are installed to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and the corresponding symlinks are set to `/home/root/.hyperhdr/`.
 The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 
+If you are using the new **HyperSerial/Pico** as an LED controller, you should go to the HyperHDR menu, select under LED Controller, 'adalight' and enable the **Infinite Color Engine RGBW** option instead of the previous **White Channel Calibration (RGBW only)** option.
+
+<img width="1285" height="1077" alt="Enable RGBW with dithering by Infinite Color Engine" src="https://github.com/user-attachments/assets/d949ae27-ff6d-4447-ab33-2e62617da142" />
+
+However, this requires that you have already updated HyperSerial/Pico to the new version v11.0.0 (**Direct 32-Bit Rendering**).
+
+Users of the WLED controller can benefit from the new HyperHDR feature by flashing the [Hyperk](https://github.com/awawa-dev/Hyperk) firmware from awawa-dev onto the LED controller.
+
+See also my guide on flashing and commissioning at: [Hyperk Guide](https://github.com/satgit62/How-to-install-and-set-up-Hyperk-on-ESP-RP-2040-2350)
+
+
 # Note
 
 If NV12 mode has been successfully activated, this is displayed in the HyperHDR log:

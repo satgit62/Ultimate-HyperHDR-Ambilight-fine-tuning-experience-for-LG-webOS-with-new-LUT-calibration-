@@ -167,7 +167,9 @@ The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 
 However, this requires that you have already updated HyperSerial/Pico to the new version v11.0.0 (**Direct 32-Bit Rendering**).
 
-Users of the WLED controller can benefit from the new HyperHDR feature by flashing the [Hyperk](https://github.com/awawa-dev/Hyperk) firmware from awawa-dev onto the LED controller.
+# 💡 Tip
+
+Users of the **ESP LED controllers** and those compatible with **WLED** firmware, can benefit from the new HyperHDR feature by flashing the [Hyperk](https://github.com/awawa-dev/Hyperk) firmware from [@awawa-dev] onto the LED controller.
 
 See also my guide on flashing and commissioning at: [Hyperk Guide](https://github.com/satgit62/How-to-install-and-set-up-Hyperk-on-ESP-RP-2040-2350)
 

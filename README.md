@@ -159,7 +159,7 @@ After you have selected/approved the LUT, wait until Success! appears in the bot
 The uncompressed LUTs are installed to `/media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` and the corresponding symlinks are set to `/home/root/.hyperhdr/`.
 The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 
-# Tip
+# 💡 Tip
 
 > If you are using the new **HyperSerial/Pico** as an LED controller, you should go to the HyperHDR menu, select under LED Controller, 'adalight' and enable the **Infinite Color Engine RGBW** option instead of the previous **White Channel Calibration (RGBW only)** option.
 > 

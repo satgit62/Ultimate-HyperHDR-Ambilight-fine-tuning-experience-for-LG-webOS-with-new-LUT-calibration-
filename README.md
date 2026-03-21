@@ -161,9 +161,11 @@ The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 
 # Tip
 
->> If you are using the new **HyperSerial/Pico** as an LED controller, you should go to the HyperHDR menu, select under LED Controller, 'adalight' and enable the **Infinite Color Engine RGBW** option instead of the previous **White Channel Calibration (RGBW only)** option.
+> If you are using the new **HyperSerial/Pico** as an LED controller, you should go to the HyperHDR menu, select under LED Controller, 'adalight' and enable the **Infinite Color Engine RGBW** option instead of the previous **White Channel Calibration (RGBW only)** option.
+> 
 
 <img width="1285" height="1077" alt="Enable RGBW with dithering by Infinite Color Engine" src="https://github.com/user-attachments/assets/d949ae27-ff6d-4447-ab33-2e62617da142" />
+
 
 However, this requires that you have already updated HyperSerial/Pico to the new version v11.0.0 (**Direct 32-Bit Rendering**).
 

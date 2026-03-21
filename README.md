@@ -84,12 +84,10 @@ Here is an update from March 20, 2026:
 * New Smoothing Algorithms
 
 
-# UPDATE from February 16, 2025:
-Version 0.5.1 of PicCap with the new NV12 backends  has been released. YUV422 to NV12 conversion has been added. 
+# UPDATE 
+[Version 0.5.2](https://github.com/TBSniller/piccap/releases/download/0.5.2/org.webosbrew.piccap_0.5.2_all.ipk) of PicCap with the new NV12 backends has been released. YUV422 to NV12 conversion has been added. 
 
 # To avoid errors, please do not use any other version!
-
-https://github.com/TBSniller/piccap/releases/download/0.5.1/org.webosbrew.piccap_0.5.1_all.ipk
 
 After successful installation and Services Elevation, you need to reboot, open PicCap, configure to your liking, enable NV12, enable autostart, save and reboot.
 

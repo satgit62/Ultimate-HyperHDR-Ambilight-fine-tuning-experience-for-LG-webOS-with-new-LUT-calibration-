@@ -140,6 +140,7 @@ To avoid errors, please uninstall HyperHDR webos-loader if you have installed a 
 <img width="1445" height="817" alt="HyperHDR Loader" src="https://github.com/user-attachments/assets/dcccaabb-1c42-40a5-95a8-86bf09318b77" />
 
 * e. The next step is to select the LUT version to install. Compressed and uncompressed LUT versions are available for NV12. By default, only one LUT is installed and NV12 must be disabled in PicCap.
+  * Important: The LUT is downloaded from the Internet. If you have blocked Internet access for your TV then you must unblock it before you install the LUT. You can re-block Internet access for your TV after you have finished installing the LUT.
 
 ![2](https://github.com/user-attachments/assets/2640dc01-26d6-4709-a0d9-7cf1c6e9d667)
 

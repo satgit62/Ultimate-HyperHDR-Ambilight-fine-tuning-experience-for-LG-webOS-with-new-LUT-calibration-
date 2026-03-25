@@ -110,7 +110,21 @@ Since HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to 
 How to install .ipk files without Homebrew Channel can be found in my other guide. See: https://github.com/satgit62/How-to-Install-and-set-up-Ambilight-on-LG-webOS#manual-installation-of-apps-without-homebrew-channel.
 
 # HyperHDR UPDATE instructions:
-There are no instructions for updating HyperHDR or Hyperion.NG from the Homebrew Channel, as all you need to do is click on “Update” and the process will run automatically.
+
+Since my version is not part of the official Homebrew Channel App Store, it cannot be updated via the default HBC repository.
+For this reason, you will need to install it manually or enter my repository address in the Homebrew Channel under 'Settings' using 'Add repository'.
+
+```
+https://satgit62.github.io/webos-hyperhdr/repo.json
+```
+
+<img width="1920" height="1080" alt="Homebrew Channel Add repository" src="https://github.com/user-attachments/assets/c1827c84-cc71-4cd4-9a27-0c8e2a7ec57d" />
+
+<img width="542" height="361" alt="Hyperhdr update" src="https://github.com/user-attachments/assets/b35e885b-8ce5-4774-b944-d4ae171ab361" />
+
+Note: On older devices with expired SSL certificates, additional repositories in the Homebrew Channel may not work. An error message will appear on the Apps overview page. "**An error occured while downloading some repositories: https://satgit62.github.io/webos-hyperhdr/repo.json(0)**"
+In this case, you will also need to install it manually.
+
 
 If you want to update one of my versions outside of the Homebrew Channel, you must first uninstall the application using the webOS Dev Manager or the App Browser.
 Only then can you install the new “org.webosbrew.hyperhdr.loader_0.x.x_all.ipk” without any concerns.

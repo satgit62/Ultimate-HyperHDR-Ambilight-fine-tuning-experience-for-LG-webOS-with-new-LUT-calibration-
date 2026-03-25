@@ -153,7 +153,7 @@ To avoid errors, please uninstall HyperHDR webos-loader if you have installed a 
 * a. Start HyperHDR app and stop the services/daemon.
 * b. Start webOS Dev Manager on the PC and uninstall HyperHDR.
 * c. Install the new webos HyperHDR loader.
-* d. Start the HyperHDR application and go to the settings in the top right corner. (gear wheel) See image.
+* d. Start the HyperHDR application and go to the settings in the top right corner. (⚙️) See image.
 
 # LUT Loader
   

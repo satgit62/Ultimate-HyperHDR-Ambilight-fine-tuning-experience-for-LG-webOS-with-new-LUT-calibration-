@@ -120,9 +120,13 @@ https://satgit62.github.io/webos-hyperhdr/repo.json
 
 <img width="1920" height="1080" alt="Homebrew Channel Add repository" src="https://github.com/user-attachments/assets/c1827c84-cc71-4cd4-9a27-0c8e2a7ec57d" />
 
-<img width="542" height="361" alt="Hyperhdr update" src="https://github.com/user-attachments/assets/b35e885b-8ce5-4774-b944-d4ae171ab361" />
+<img width="960" height="540" alt="Homebrew Channel" src="https://github.com/user-attachments/assets/0c62e60e-a53b-4ca7-85d0-53f6b35f914e" />
 
-Note: On older devices with expired SSL certificates, additional repositories in the Homebrew Channel may not work. An error message will appear on the Apps overview page. "An error occured while downloading some repositories: https://satgit62.github.io/webos-hyperhdr/repo.json(0)"
+<img width="960" height="540" alt="HyperHdr by satgit62" src="https://github.com/user-attachments/assets/085ed7d1-ea33-4cb4-a88d-49144e517262" />
+
+# Note:
+
+On older devices with expired SSL certificates, additional repositories in the Homebrew Channel may not work. An error message will appear on the Apps overview page. "An error occured while downloading some repositories: https://satgit62.github.io/webos-hyperhdr/repo.json(0)"
 In this case, you will also need to install it manually.
 
 

@@ -59,10 +59,11 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from March 20, 2026:
+Here is an update from March 29, 2026:
 
-* RGBW with Temporal Dithering powered by [ICE](https://github.com/awawa-dev/HyperHDR/pull/1483), has been implemented
+* Temporal Dithering: [Improved Precision and Adaptive Stabilization](https://github.com/awawa-dev/HyperHDR/pull/1490)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+* RGBW with Temporal Dithering powered by [ICE](https://github.com/awawa-dev/HyperHDR/pull/1483), has been implemented
 * The Philips WiZ driver, including the Philips WiZ Wizard, has been integrated into HyperHDR
 * Fixed: LUT loader (curl: (60) SSL certificate issue)
 * A DDP/Hyperk driver for Hyperk LED controllers has been implemented [hyperk](https://github.com/satgit62/How-to-install-and-set-up-Hyperk-on-ESP-RP-2040-2350)
@@ -146,7 +147,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-HyperHDR Current version (RGBW with Temporal Dithering powered by ICE) download: [https://github.com](https://satgit62.github.io/webos-hyperhdr/org.webosbrew.hyperhdr.loader_0.3.7_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
+HyperHDR Current version (RGBW with Temporal Dithering powered by ICE) download: [https://github.com](https://github.com/satgit62/webos-hyperhdr/releases/download/0.3.8/org.webosbrew.hyperhdr.loader_0.3.8_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

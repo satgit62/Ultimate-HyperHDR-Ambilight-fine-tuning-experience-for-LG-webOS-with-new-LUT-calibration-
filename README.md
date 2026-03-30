@@ -248,10 +248,13 @@ The smoothing functions are particularly excellent. They enable a smooth transit
 # Image Procesing-Infinit Color Engine:
 
 Here you can adjust color accuracy (RGBCMYW), brightness/luminance, color saturation, gamma and temperature values, and the minimum backlight level.
-Tip: 
-If the LEDs go out when displaying black, set the minimum backlight level to 0.
-- You should set the color temperature accordingly when using RGBW LEDs (CW, NW, or WW), otherwise set it to “Disable.”
-“Custom” gives you another option to set the temperature for each color component (RGB) more precisely if the other settings do not correspond to reality.
+
+# 💡 Tip 
+
+If you want the LEDs to turn off when displaying black, set the minimum backlight brightness to 0.
+
+You should set the color temperature accordingly when using RGBW LEDs (CW, NW, or WW), otherwise set it to 'Disable'.
+'Custom' gives you another option to set the temperature for each color component (RGB) more precisely if the other settings do not correspond to reality.
 
 <img width="1847" height="1079" alt="Image Processing-Infinit Color Engine" src="https://github.com/user-attachments/assets/a12be97a-8342-42f9-a071-ef7dc770edf0" />
 

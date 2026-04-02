@@ -16,7 +16,7 @@ Since some inexperienced users recently found this guide too complicated and als
 
 With the changes in the PicCap UI, the additional code from [neogeo](https://github.com/Syspoke) for the HyperHDR LUT-Installer and the countless tips from @awawa-dev, I was finally able to put together a new HyperHDR version that simplifies everything.
 
-This guide is based on [awawa-dev](https://github.com/awawa-dev) NV12 implementation and new LUT calibration method in HyperHDR, [sundermann](https://github.com/sundermann) NV12 customisation in hyperion-webos and Add NV12 to PicCap-UI by * [TBSniller](https://github.com/TBSniller) & [satgit62](https://github.com/satgit62).
+This guide is based on [awawa-dev](https://github.com/awawa-dev) NV12 implementation and new LUT calibration method in HyperHDR, [sundermann](https://github.com/sundermann) NV12 customisation in hyperion-webos and Add NV12 to PicCap-UI by [TBSniller](https://github.com/TBSniller) & [satgit62](https://github.com/satgit62).
 
 To use this guide, you will need PiCap v0.5.1 or higher and HyperHDR v21.0.0.0 or higher. To use HyperHDR with the Infinite Color Engine, you will need version v22.0.0beta0 or higher (v22.0.0beta1) from [awawa-dev](https://github.com/awawa-dev/HyperHDR).
 

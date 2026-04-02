@@ -62,6 +62,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 Here is an update from April 2, 2026:
 
 * New LUT table added (compressed and uncompressed versions).
+
 ℹ️: LUTs must be reinstalled using the LUT Loader ⚙️ in the HyperHDR app
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Temporal Dithering: [Improved Precision and Adaptive Stabilization](https://github.com/awawa-dev/HyperHDR/pull/1490)

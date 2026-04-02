@@ -57,9 +57,9 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Fix HyperHDR daemon when starting calibration process by @satgit62
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
-# HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
+> HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from April 2, 2026:
+# Here is an update from April 2, 2026:
 
 * New LUT table added (compressed and uncompressed versions), Displaying **HDR/DV** content should enhance the colour accuracy of the LEDs.
 

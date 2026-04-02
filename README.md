@@ -59,10 +59,11 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-Here is an update from March 29, 2026:
+Here is an update from April 2, 2026:
 
-* Temporal Dithering: [Improved Precision and Adaptive Stabilization](https://github.com/awawa-dev/HyperHDR/pull/1490)
+New LUT table added (compressed and uncompressed versions). LUTs must be reinstalled using the LUT Loader ⚙️ in the HyperHDR app
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Temporal Dithering: [Improved Precision and Adaptive Stabilization](https://github.com/awawa-dev/HyperHDR/pull/1490)
 * RGBW with Temporal Dithering powered by [ICE](https://github.com/awawa-dev/HyperHDR/pull/1483), has been implemented
 * The Philips WiZ driver, including the Philips WiZ Wizard, has been integrated into HyperHDR
 * Fixed: LUT loader (curl: (60) SSL certificate issue)

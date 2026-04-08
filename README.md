@@ -133,7 +133,7 @@ https://satgit62.github.io/webos-hyperhdr/repo.json
 
 On older devices with expired SSL certificates, additional repositories in the Homebrew Channel may not work. An error message will appear on the Apps overview page. "An error occured while downloading some repositories: https://satgit62.github.io/webos-hyperhdr/repo.json(0)"
 
-For this reason, you will need to install it manually. 
+For this reason, you need to update the LG CA certificates to replace the recently expired Let's Encrypt CA certificates. [Quick Fix for CA Cert Update](https://github.com/tf318/lg)
 
 If you want to update one of my versions outside of the Homebrew Channel, you must first uninstall the application using the webOS Dev Manager or the App Browser.
 Only then can you install the new “org.webosbrew.hyperhdr.loader_0.x.x_all.ipk” without any concerns.

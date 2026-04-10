@@ -125,9 +125,13 @@ https://satgit62.github.io/webos-hyperhdr/repo.json
 
 <img width="1920" height="1080" alt="Homebrew Channel Add repository" src="https://github.com/user-attachments/assets/c1827c84-cc71-4cd4-9a27-0c8e2a7ec57d" />
 
-<img width="960" height="540" alt="Homebrew Channel" src="https://github.com/user-attachments/assets/0c62e60e-a53b-4ca7-85d0-53f6b35f914e" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/fb4727f0-08bd-4399-8a6d-eeec23387139" />
 
-<img width="960" height="540" alt="HyperHdr by satgit62" src="https://github.com/user-attachments/assets/085ed7d1-ea33-4cb4-a88d-49144e517262" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/f714d84e-1242-4126-a9a7-26bdad32cdf6" />
+
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/f42a7462-ab4e-4fda-989b-c4920a6d586d" />
+
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/2fee46f0-32c4-49fa-a079-94040145fef9" />
 
 # Note:
 

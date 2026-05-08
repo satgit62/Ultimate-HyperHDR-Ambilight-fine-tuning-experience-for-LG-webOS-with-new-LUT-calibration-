@@ -63,6 +63,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * HyperHDR 22.0.0beta2 (Infinite Color Engine) has been released
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 * New LUT table added (compressed and uncompressed versions), Displaying **HDR/DV** content should enhance the colour accuracy of the LEDs.
+  
 ℹ️: LUTs must be reinstalled using the LUT Loader ⚙️ in the HyperHDR app
 * Temporal Dithering: [Improved Precision and Adaptive Stabilization](https://github.com/awawa-dev/HyperHDR/pull/1490)
 * RGBW with Temporal Dithering powered by [ICE](https://github.com/awawa-dev/HyperHDR/pull/1483), has been implemented

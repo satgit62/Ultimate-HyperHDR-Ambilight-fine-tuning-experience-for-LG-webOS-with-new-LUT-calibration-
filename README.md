@@ -57,14 +57,13 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Fix HyperHDR daemon when starting calibration process by @satgit62
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
-> HyperHDR has been released in version 22.0.0.0beta1. (Infinite Color Engine)
 
-# Here is an update from April 2, 2026:
+# Here is an update from May 5, 2026:
 
-* New LUT table added (compressed and uncompressed versions), Displaying **HDR/DV** content should enhance the colour accuracy of the LEDs.
-
-ℹ️: LUTs must be reinstalled using the LUT Loader ⚙️ in the HyperHDR app
+* HyperHDR 22.0.0beta2 (Infinite Color Engine) has been released
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+* New LUT table added (compressed and uncompressed versions), Displaying **HDR/DV** content should enhance the colour accuracy of the LEDs.
+ℹ️: LUTs must be reinstalled using the LUT Loader ⚙️ in the HyperHDR app
 * Temporal Dithering: [Improved Precision and Adaptive Stabilization](https://github.com/awawa-dev/HyperHDR/pull/1490)
 * RGBW with Temporal Dithering powered by [ICE](https://github.com/awawa-dev/HyperHDR/pull/1483), has been implemented
 * The Philips WiZ driver, including the Philips WiZ Wizard, has been integrated into HyperHDR
@@ -155,7 +154,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-HyperHDR Current version (RGBW with Temporal Dithering powered by ICE) download: [https://github.com](https://github.com/satgit62/webos-hyperhdr/releases/download/0.3.8/org.webosbrew.hyperhdr.loader_0.3.8_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta1-Infinite Color Engine)
+HyperHDR Current version (RGBW with Temporal Dithering powered by ICE) download: [https://github.com](https://satgit62.github.io/webos-hyperhdr/org.webosbrew.hyperhdr.loader_0.3.9_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta2-Infinite Color Engine)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 

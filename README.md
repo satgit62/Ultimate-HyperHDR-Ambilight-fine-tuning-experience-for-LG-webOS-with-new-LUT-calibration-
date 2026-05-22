@@ -194,14 +194,19 @@ The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 
 Attention! The settings shown in the image for 'Enable RGBW with dithering via Infinite Color Engine' are the optimal values I achieved in my setup for the **SK6812RGBW NW** model.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1285" height="1077" alt="Enable RGBW with dithering by Infinite Color Engine" src="https://github.com/user-attachments/assets/d949ae27-ff6d-4447-ab33-2e62617da142" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The default settings shown in the following image are the optimal values for the **SK6812RGBW-CW** version.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="686" height="428" alt="ICE white settins for SK6812 Cold White" src="https://github.com/user-attachments/assets/8247d08c-2687-4bbd-86c2-73a9e15ecfe2" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # ICE white mixer threshold:
 Defines the activation point for the soft mixer. It triggers a linear transition of the common RGB component to the white channel based on color brightness. A value of 1.0 completely disables the mixer, taking all the common RGB into account (significantly increasing the white diode’s contribution), while lower values determine the starting point for the gradual ramp-up—e.g., 0% transfer at the threshold, 50% halfway to maximum.

@@ -219,17 +219,22 @@ Defines the color temperature (white point) of the dedicated white LED. Default 
 Additionally, under 'Image Processing,' set >'Temperature' to 'Custom' with an RGB value of 1 and 'User Gamma' to 2.2 (see the illustrations for 'Temperature' and 'User Gamma').
 My preferred smoothing settings can be found in the smoothing image.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1834" height="873" alt="Temperature" src="https://github.com/user-attachments/assets/7242b5ea-5e29-47e6-bb22-a1e22dc94b91" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1080" height="879" alt="User gamma" src="https://github.com/user-attachments/assets/409d911c-bfea-4990-b152-08cb4a6e7fca" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="767" height="868" alt="Smoothing" src="https://github.com/user-attachments/assets/4b0d4c33-dbb8-40aa-b472-82c3b4d3c746" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 However, this requires that you have already updated HyperSerial/Pico to the new version v11.0.0 (**Direct 32-Bit Rendering**).
+
 
 # 💡 Tip
 

@@ -192,28 +192,42 @@ The compressed LUTs will be installed in `/home/root/.hyperhdr/`.
 > If you are using the new **HyperSerial/Pico** as an LED controller, you should go to the HyperHDR menu, select under LED Controller, 'adalight' and enable the **Enable RGBW with dithering via Infinite Color Engine** option instead of the previous **White Channel Calibration (RGBW only)** option.
 > 
 
-Attention! The settings shown in the figure for ‘Enable RGBW with dithering via Infinite Color Engine’ are the optimal values for the **SK6812RGBW NW** version.
+Attention! The settings shown in the image for 'Enable RGBW with dithering via Infinite Color Engine' are the optimal values I achieved in my setup for the **SK6812RGBW NW** model.
+
 
 <img width="1285" height="1077" alt="Enable RGBW with dithering by Infinite Color Engine" src="https://github.com/user-attachments/assets/d949ae27-ff6d-4447-ab33-2e62617da142" />
 
 
-The default settings shown in the following image are the optimal values for the SK6812RGBW-CW version.
+The default settings shown in the following image are the optimal values for the **SK6812RGBW-CW** version.
+
 
 <img width="686" height="428" alt="ICE white settins for SK6812 Cold White" src="https://github.com/user-attachments/assets/8247d08c-2687-4bbd-86c2-73a9e15ecfe2" />
 
 # ICE white mixer threshold:
 Defines the activation point for the soft mixer. It triggers a linear transition of the common RGB component to the white channel based on color brightness. A value of 1.0 completely disables the mixer, taking all the common RGB into account (significantly increasing the white diode’s contribution), while lower values determine the starting point for the gradual ramp-up—e.g., 0% transfer at the threshold, 50% halfway to maximum.
 
+# ICE white led intensity:
+Defines the physical brightness of the typically higher-intensity white diode relative to the combined RGB diodes. Setting this value higher than your hardware's actual output will cause the engine to underdrive the white channel, resulting in lower overall utilization of the white diode.
+
+# ICE white temperature: 
+
+Defines the color temperature (white point) of the dedicated white LED. Default values are empirically calibrated for SK6812 Cold White. If using warmer variants, such as SK6812 Neutral White, you may need to lower the Blue channel value to protect the light of physically weaker blue diode present in those models.
+
+
 # Additional settings:
 
 Additionally, under 'Image Processing,' set >'Temperature' to 'Custom' with an RGB value of 1 and 'User Gamma' to 2.2 (see the illustrations for 'Temperature' and 'User Gamma').
 My preferred smoothing settings can be found in the smoothing image.
 
+
 <img width="1834" height="873" alt="Temperature" src="https://github.com/user-attachments/assets/7242b5ea-5e29-47e6-bb22-a1e22dc94b91" />
+
 
 <img width="1080" height="879" alt="User gamma" src="https://github.com/user-attachments/assets/409d911c-bfea-4990-b152-08cb4a6e7fca" />
 
+
 <img width="767" height="868" alt="Smoothing" src="https://github.com/user-attachments/assets/4b0d4c33-dbb8-40aa-b472-82c3b4d3c746" />
+
 
 However, this requires that you have already updated HyperSerial/Pico to the new version v11.0.0 (**Direct 32-Bit Rendering**).
 

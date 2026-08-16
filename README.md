@@ -60,8 +60,8 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # Here is an update from August 16, 2026:
 
-* Fix RGB splitting across E1.31 universes ([#1585](https://github.com/awawa-dev/HyperHDR/pull/1585)
-* Fix smoothing algorithm drift in long-running sessions ([#1561](https://github.com/awawa-dev/HyperHDR/pull/1561)
+* Fix RGB splitting across E1.31 universes ([#1585](https://github.com/awawa-dev/HyperHDR/pull/1585))
+* Fix smoothing algorithm drift in long-running sessions ([#1561](https://github.com/awawa-dev/HyperHDR/pull/1561))
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 * HyperHDR 22.0.0beta2 (Infinite Color Engine) has been released
 * New LUT table added (compressed and uncompressed versions), Displaying **HDR/DV** content should enhance the colour accuracy of the LEDs.

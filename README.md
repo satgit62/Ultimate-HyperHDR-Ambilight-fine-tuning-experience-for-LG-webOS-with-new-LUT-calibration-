@@ -51,6 +51,12 @@ Thanks to the implementation of a new ZSTD compression process by @awawa-de, com
 	* lut_lin_tables_hdr.3d.zst
 	* lut_lin_tables_dv.3d.zst
 	* lut_lin_tables.3d.zst
+
+# UPDATE from September 5, 2025:
+
+Since HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to also switch the HyperHDR loader for webOS to QT 6.8.3 with the help of @awawa-dev. This will prevent future compatibility issues. It also ensures that this branch is 100 percent compatible with the new features already integrated in this version as well as with future features, and that no components of the app infringe on copyright. 
+
+
 I recompiled the official HyperHDR-WebOS-Loader and added the following new functions and features:
 
 * Add Settings Panel with Lut install selector by @neogeo
@@ -107,10 +113,6 @@ When using the NV12 option with multiple LUTs, please do not activate the "Disab
 
 <img width="1451" height="817" alt="advances settings" src="https://github.com/user-attachments/assets/c396aed0-5bb0-4c01-9165-46cb50c540a9" />
 
-
-# UPDATE from September 5, 2025:
-
-Since HyperHDR developer @awawa-dev has switched to QT 6.8.3, I have decided to also switch the HyperHDR loader for webOS to QT 6.8.3 with the help of @awawa-dev. This will prevent future compatibility issues. It also ensures that this branch is 100 percent compatible with the new features already integrated in this version as well as with future features, and that no components of the app infringe on copyright. 
 
 # 2. HyperHDR installation instructions:
 

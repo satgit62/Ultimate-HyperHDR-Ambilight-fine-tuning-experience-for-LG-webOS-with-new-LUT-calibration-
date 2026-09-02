@@ -64,7 +64,7 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 * Fix HyperHDR daemon at screensaver start (The HyperHDR daemon is no longer stopped when the internal screensaver or the custom Aerial Screensaver for webOS is switched on. (Ambilight works) by @satgit62
 
 
-# Here is an update from August 16, 2026:
+# Here is an update from September 02, 2026:
 
 * HyperHDR has been released in version v22.0.0 (https://github.com/awawa-dev/HyperHDR/releases/tag/v22.0.0.0)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -66,9 +66,10 @@ I recompiled the official HyperHDR-WebOS-Loader and added the following new func
 
 # Here is an update from August 16, 2026:
 
+* HyperHDR has been released in version v22.0.0 (https://github.com/awawa-dev/HyperHDR/releases/tag/v22.0.0.0)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 * Fix RGB splitting across E1.31 universes ([#1585](https://github.com/awawa-dev/HyperHDR/pull/1585))
 * Fix smoothing algorithm drift in long-running sessions ([#1561](https://github.com/awawa-dev/HyperHDR/pull/1561))
---------------------------------------------------------------------------------------------------------------------------------------------------------------
 * HyperHDR 22.0.0beta2 (Infinite Color Engine) has been released
 * New LUT table added (compressed and uncompressed versions), Displaying **HDR/DV** content should enhance the colour accuracy of the LEDs.
   
@@ -160,7 +161,7 @@ In addition, only a small fraction of the flash memory is used, leaving enough m
 
 # To avoid errors, Please use only this version for these instructions:
 
-HyperHDR Current version (RGBW with Temporal Dithering powered by ICE) download: [https://github.com](https://satgit62.github.io/webos-hyperhdr/org.webosbrew.hyperhdr.loader_0.4.0_all.ipk) (This corresponds to the latest HyperHDR version v22.0.0.0beta2-Infinite Color Engine)
+HyperHDR Current version (RGBW with Temporal Dithering powered by ICE) download: [https://github.com](https://satgit62.github.io/webos-hyperhdr/org.webosbrew.hyperhdr.loader_0.4.1_all.ipk) (This corresponds to the latest HyperHDR v22.0.0)
 
 To avoid errors, please uninstall HyperHDR webos-loader if you have installed a previous version. Your settings will be preserved.
 
